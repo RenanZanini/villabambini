@@ -1,0 +1,9 @@
+{
+  "name": "villabambini-root",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix site",
+    "build": "npm run build --prefix site",
+    "preview": "npm run preview --prefix site"
+  }
+}
