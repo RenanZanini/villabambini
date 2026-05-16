@@ -16,9 +16,9 @@ export function ProductCard({ product, onAdd }) {
   };
 
   const handleAdd = () => {
-    if (!selectedSize) return;
+    if (!selectedSize && product.sizes && product.sizes.length > 0) return;
     setIsAdding(true);
-    onAdd({ ...product, selectedSize });
+    onAdd({ ...product, selectedSize: selectedSize || "A definir" });
     setTimeout(() => {
       setIsAdding(false);
       setSelectedSize(null);
