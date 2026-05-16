@@ -6,12 +6,6 @@ export default function Footer() {
 
   return (
     <footer className="footer" id="footer">
-      <div className="brand-marquee">
-        <div className="marquee-content">
-          <img src="/assets/brand-logos.png" alt="Marcas Parceiras" className="marquee-img" />
-          <img src="/assets/brand-logos.png" alt="Marcas Parceiras" className="marquee-img" />
-        </div>
-      </div>
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">

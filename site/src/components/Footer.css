@@ -7,8 +7,9 @@
 .brand-marquee {
   width: 100%;
   overflow: hidden;
-  background: #fdfdfd;
+  background: white;
   padding: 40px 0;
+  border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -18,14 +19,14 @@
   animation: marquee 30s linear infinite;
   width: max-content;
   align-items: center;
+  gap: 80px;
 }
 
 .marquee-img {
   height: 60px;
   width: auto;
-  margin: 0;
   object-fit: contain;
-  padding: 0 40px;
+  display: block;
 }
 
 @keyframes marquee {
