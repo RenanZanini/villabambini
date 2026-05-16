@@ -103,6 +103,7 @@ export function ProductGrid({ products, onAdd, onOpenCart }) {
     'Destaques',
     'Menina de 1 até 12',
     'Menino',
+    'Baby',
     'Bonecas exclusivas'
   ];
   

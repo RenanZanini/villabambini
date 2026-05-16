@@ -1,28 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Hero.css';
 
-const heroImages = [
-  '/assets/marthie/Capa.jpg',
-  '/assets/marthie/MA0477 01.jpg',
-  '/assets/marthie/MA0481 01.jpg',
-  '/assets/marthie/MA0485 01.jpg',
-  '/assets/marthie/MA0491 01.jpg'
-];
+const heroImage = "/assets/hero-highlight.jpg";
 
 export default function Hero() {
-  const [currentImg, setCurrentImg] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImg((prev) => (prev + 1) % heroImages.length);
-    }, 15000);
-    return () => clearInterval(interval);
-  }, []);
-
   const handleVerColecao = (e) => {
     e.preventDefault();
     document.getElementById('catalog').scrollIntoView({ behavior: 'smooth' });
-    window.dispatchEvent(new CustomEvent('changeCategory', { detail: 'Menina de 1 até 14' }));
+    window.dispatchEvent(new CustomEvent('changeCategory', { detail: 'Menina de 1 até 12' }));
   };
 
   return (
@@ -59,10 +44,9 @@ export default function Hero() {
         <div className="hero-visual slide-up" style={{ animationDelay: '0.2s' }}>
           <div className="hero-image-wrapper">
             <img 
-              key={currentImg}
-              src={heroImages[currentImg]} 
-              alt="La Villa Bambini - Coleção Inverno" 
-              className="hero-featured-img fade-transition" 
+              src={heroImage} 
+              alt="Villa Bambini - Coleção Inverno" 
+              className="hero-featured-img" 
             />
           </div>
         </div>

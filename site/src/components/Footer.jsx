@@ -8,9 +8,8 @@ export default function Footer() {
     <footer className="footer" id="footer">
       <div className="brand-marquee">
         <div className="marquee-content">
-          <img src="/assets/footer-logos.jpg" alt="Marcas Parceiras" className="marquee-img" />
-          <img src="/assets/footer-logos.jpg" alt="Marcas Parceiras" className="marquee-img" />
-          <img src="/assets/footer-logos.jpg" alt="Marcas Parceiras" className="marquee-img" />
+          <img src="/assets/brand-logos.png" alt="Marcas Parceiras" className="marquee-img" />
+          <img src="/assets/brand-logos.png" alt="Marcas Parceiras" className="marquee-img" />
         </div>
       </div>
       <div className="container">

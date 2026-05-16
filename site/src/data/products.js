@@ -1,174 +1,156 @@
 export default [
   {
     "id": 1,
-    "name": "Conjunto Inverno Marthiê MA0471",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0471 01.jpg",
-    "hoverImage": "/assets/marthie/MA0471 02.jpg",
+    "name": "Baby 1",
+    "category": "Baby",
+    "image": "/assets/marthie/Baby 1.jpeg",
+    "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva da Coleção de Inverno Marthiê.",
+    "description": "Peça exclusiva Villa Bambini.",
     "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
+      "0-3m",
+      "3-6m",
+      "6-9m",
+      "9-12m"
     ],
-    "highlight": true
+    "highlight": false
   },
   {
     "id": 2,
-    "name": "Conjunto Inverno Marthiê MA0472",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0472 01.jpg",
-    "hoverImage": "/assets/marthie/MA0472 02.jpg",
+    "name": "Baby 2",
+    "category": "Baby",
+    "image": "/assets/marthie/Baby 2.jpeg",
+    "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva da Coleção de Inverno Marthiê.",
+    "description": "Peça exclusiva Villa Bambini.",
     "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
+      "0-3m",
+      "3-6m",
+      "6-9m",
+      "9-12m"
     ],
-    "highlight": true
+    "highlight": false
   },
   {
     "id": 3,
-    "name": "Conjunto Inverno Marthiê MA0473",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0473 01.jpg",
-    "hoverImage": "/assets/marthie/MA0473 02.jpg",
+    "name": "Baby 3",
+    "category": "Baby",
+    "image": "/assets/marthie/Baby 3.jpeg",
+    "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva da Coleção de Inverno Marthiê.",
+    "description": "Peça exclusiva Villa Bambini.",
     "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
+      "0-3m",
+      "3-6m",
+      "6-9m",
+      "9-12m"
     ],
-    "highlight": true
+    "highlight": false
   },
   {
     "id": 4,
-    "name": "Conjunto Inverno Marthiê MA0474",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0474 01.jpg",
-    "hoverImage": "/assets/marthie/MA0474 02.jpg",
+    "name": "Baby 4",
+    "category": "Baby",
+    "image": "/assets/marthie/Baby 4.jpeg",
+    "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva da Coleção de Inverno Marthiê.",
+    "description": "Peça exclusiva Villa Bambini.",
     "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
+      "0-3m",
+      "3-6m",
+      "6-9m",
+      "9-12m"
     ],
-    "highlight": true
+    "highlight": false
   },
   {
     "id": 5,
-    "name": "Conjunto Inverno Marthiê MA0475",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0475 01.jpg",
-    "hoverImage": "/assets/marthie/MA0475 02.jpg",
+    "name": "Baby 5",
+    "category": "Baby",
+    "image": "/assets/marthie/Baby 5.jpeg",
+    "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva da Coleção de Inverno Marthiê.",
+    "description": "Peça exclusiva Villa Bambini.",
     "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
+      "0-3m",
+      "3-6m",
+      "6-9m",
+      "9-12m"
     ],
     "highlight": false
   },
   {
     "id": 6,
-    "name": "Conjunto Inverno Marthiê MA0476",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0476 01.jpg",
-    "hoverImage": "/assets/marthie/MA0476 02.jpg",
+    "name": "Baby 6",
+    "category": "Baby",
+    "image": "/assets/marthie/Baby 6.jpeg",
+    "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva da Coleção de Inverno Marthiê.",
+    "description": "Peça exclusiva Villa Bambini.",
     "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
+      "0-3m",
+      "3-6m",
+      "6-9m",
+      "9-12m"
     ],
     "highlight": false
   },
   {
     "id": 7,
-    "name": "Conjunto Inverno Marthiê MA0477",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0477 01.jpg",
-    "hoverImage": "/assets/marthie/MA0477 02.jpg",
+    "name": "Baby conjunto 1",
+    "category": "Baby",
+    "image": "/assets/marthie/Baby conjunto 1.jpeg",
+    "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva da Coleção de Inverno Marthiê.",
+    "description": "Peça exclusiva Villa Bambini.",
     "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
+      "0-3m",
+      "3-6m",
+      "6-9m",
+      "9-12m"
     ],
     "highlight": false
   },
   {
     "id": 8,
-    "name": "Conjunto Inverno Marthiê MA0478",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0478 01.jpg",
-    "hoverImage": "/assets/marthie/MA0478 02.jpg",
+    "name": "Baby menina 2",
+    "category": "Baby",
+    "image": "/assets/marthie/Baby menina 2.jpeg",
+    "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva da Coleção de Inverno Marthiê.",
+    "description": "Peça exclusiva Villa Bambini.",
     "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
+      "0-3m",
+      "3-6m",
+      "6-9m",
+      "9-12m"
     ],
     "highlight": false
   },
   {
     "id": 9,
-    "name": "Conjunto Inverno Marthiê MA0479",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0479 01.jpg",
-    "hoverImage": "/assets/marthie/MA0479 02.jpg",
+    "name": "Baby menina",
+    "category": "Baby",
+    "image": "/assets/marthie/Baby menina.jpeg",
+    "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva da Coleção de Inverno Marthiê.",
+    "description": "Peça exclusiva Villa Bambini.",
     "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
+      "0-3m",
+      "3-6m",
+      "6-9m",
+      "9-12m"
     ],
     "highlight": false
   },
   {
     "id": 10,
-    "name": "Conjunto Inverno Marthiê MA0480",
+    "name": "Casaco 1",
     "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0480 01.jpg",
-    "hoverImage": "/assets/marthie/MA0480 02.jpg",
+    "image": "/assets/marthie/Casaco 1.jpeg",
+    "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva da Coleção de Inverno Marthiê.",
+    "description": "Peça exclusiva Villa Bambini.",
     "sizes": [
       "2",
       "4",
@@ -181,12 +163,12 @@ export default [
   },
   {
     "id": 11,
-    "name": "Conjunto Inverno Marthiê MA0481",
+    "name": "Casaco 2",
     "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0481 01.jpg",
-    "hoverImage": "/assets/marthie/MA0481 02.jpg",
+    "image": "/assets/marthie/Casaco 2.jpeg",
+    "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva da Coleção de Inverno Marthiê.",
+    "description": "Peça exclusiva Villa Bambini.",
     "sizes": [
       "2",
       "4",
@@ -199,12 +181,12 @@ export default [
   },
   {
     "id": 12,
-    "name": "Conjunto Inverno Marthiê MA0482",
+    "name": "Casaco 4",
     "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0482 01.jpg",
-    "hoverImage": "/assets/marthie/MA0482 02.jpg",
+    "image": "/assets/marthie/Casaco 4.jpeg",
+    "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva da Coleção de Inverno Marthiê.",
+    "description": "Peça exclusiva Villa Bambini.",
     "sizes": [
       "2",
       "4",
@@ -217,12 +199,12 @@ export default [
   },
   {
     "id": 13,
-    "name": "Conjunto Inverno Marthiê MA0483",
+    "name": "Menina 7",
     "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0483 01.jpg",
-    "hoverImage": "/assets/marthie/MA0483 02.jpg",
+    "image": "/assets/marthie/Menina 7.jpeg",
+    "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva da Coleção de Inverno Marthiê.",
+    "description": "Peça exclusiva Villa Bambini.",
     "sizes": [
       "2",
       "4",
@@ -235,12 +217,12 @@ export default [
   },
   {
     "id": 14,
-    "name": "Conjunto Inverno Marthiê MA0484",
+    "name": "Menina Jaqueta",
     "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0484 01.jpg",
-    "hoverImage": "/assets/marthie/MA0484 02.jpg",
+    "image": "/assets/marthie/Menina Jaqueta.jpeg",
+    "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva da Coleção de Inverno Marthiê.",
+    "description": "Peça exclusiva Villa Bambini.",
     "sizes": [
       "2",
       "4",
@@ -253,12 +235,12 @@ export default [
   },
   {
     "id": 15,
-    "name": "Conjunto Inverno Marthiê MA0485",
+    "name": "Menina casaco",
     "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0485 01.jpg",
-    "hoverImage": "/assets/marthie/MA0485 02.jpg",
+    "image": "/assets/marthie/Menina casaco.jpeg",
+    "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva da Coleção de Inverno Marthiê.",
+    "description": "Peça exclusiva Villa Bambini.",
     "sizes": [
       "2",
       "4",
@@ -271,12 +253,12 @@ export default [
   },
   {
     "id": 16,
-    "name": "Conjunto Inverno Marthiê MA0486",
+    "name": "Menina conjunto 1",
     "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0486.jpg",
+    "image": "/assets/marthie/Menina conjunto 1.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva da Coleção de Inverno Marthiê.",
+    "description": "Peça exclusiva Villa Bambini.",
     "sizes": [
       "2",
       "4",
@@ -289,12 +271,12 @@ export default [
   },
   {
     "id": 17,
-    "name": "Conjunto Inverno Marthiê MA0488",
+    "name": "Menina conjunto 2",
     "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0488 01.jpg",
+    "image": "/assets/marthie/Menina conjunto 2.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva da Coleção de Inverno Marthiê.",
+    "description": "Peça exclusiva Villa Bambini.",
     "sizes": [
       "2",
       "4",
@@ -307,12 +289,12 @@ export default [
   },
   {
     "id": 18,
-    "name": "Conjunto Inverno Marthiê MA0489",
+    "name": "Menina conjunto 3",
     "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0489 01.jpg",
-    "hoverImage": "/assets/marthie/MA0489 02.jpg",
+    "image": "/assets/marthie/Menina conjunto 3.jpeg",
+    "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva da Coleção de Inverno Marthiê.",
+    "description": "Peça exclusiva Villa Bambini.",
     "sizes": [
       "2",
       "4",
@@ -325,12 +307,12 @@ export default [
   },
   {
     "id": 19,
-    "name": "Conjunto Inverno Marthiê MA0490",
+    "name": "Menina conjunto 5",
     "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0490.jpg",
+    "image": "/assets/marthie/Menina conjunto 5.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva da Coleção de Inverno Marthiê.",
+    "description": "Peça exclusiva Villa Bambini.",
     "sizes": [
       "2",
       "4",
@@ -343,12 +325,12 @@ export default [
   },
   {
     "id": 20,
-    "name": "Conjunto Inverno Marthiê MA0491",
+    "name": "Menina conjunto 6",
     "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0491 01.jpg",
-    "hoverImage": "/assets/marthie/MA0491 02.jpg",
+    "image": "/assets/marthie/Menina conjunto 6.jpeg",
+    "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva da Coleção de Inverno Marthiê.",
+    "description": "Peça exclusiva Villa Bambini.",
     "sizes": [
       "2",
       "4",
@@ -361,6 +343,383 @@ export default [
   },
   {
     "id": 21,
+    "name": "Menina vestido 2",
+    "category": "Menina de 1 até 12",
+    "image": "/assets/marthie/Menina vestido 2.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [
+      "2",
+      "4",
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "highlight": false
+  },
+  {
+    "id": 22,
+    "name": "Menina vestido rosa",
+    "category": "Menina de 1 até 12",
+    "image": "/assets/marthie/Menina vestido rosa.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [
+      "2",
+      "4",
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "highlight": false
+  },
+  {
+    "id": 23,
+    "name": "Menino 1",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 1.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 24,
+    "name": "Menino 10",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 10.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 25,
+    "name": "Menino 11",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 11.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 26,
+    "name": "Menino 12",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 12.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 27,
+    "name": "Menino 13",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 13.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 28,
+    "name": "Menino 15",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 15.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 29,
+    "name": "Menino 16",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 16.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 30,
+    "name": "Menino 17",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 17.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 31,
+    "name": "Menino 18",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 18.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 32,
+    "name": "Menino 19",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 19.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 33,
+    "name": "Menino 2",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 2.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 34,
+    "name": "Menino 20",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 20.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 35,
+    "name": "Menino 21",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 21.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 36,
+    "name": "Menino 22",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 22.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 37,
+    "name": "Menino 23",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 23.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 38,
+    "name": "Menino 25",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 25.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 39,
+    "name": "Menino 3",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 3.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 40,
+    "name": "Menino 34",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 34.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 41,
+    "name": "Menino 36",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 36.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 42,
+    "name": "Menino 37",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 37.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 43,
+    "name": "Menino 38",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 38.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 44,
+    "name": "Menino 4",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 4.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 45,
+    "name": "Menino 5",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 5.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 46,
+    "name": "Menino 7",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 7.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 47,
+    "name": "Menino 8",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 8.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 48,
+    "name": "Menino 9",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino 9.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 49,
+    "name": "Menino Brasil",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino Brasil.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 50,
+    "name": "Menino conjunto 2",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino conjunto 2.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 51,
+    "name": "Menino conjunto 3",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino conjunto 3.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 52,
+    "name": "Menino conjunto 4",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino conjunto 4.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 53,
+    "name": "Menino conjunto 5",
+    "category": "Menino",
+    "image": "/assets/marthie/Menino conjunto 5.jpeg",
+    "hoverImage": null,
+    "price": 0,
+    "description": "Peça exclusiva Villa Bambini.",
+    "sizes": [],
+    "highlight": false
+  },
+  {
+    "id": 54,
     "name": "Boneca LM0001 - Barbara",
     "category": "Bonecas exclusivas",
     "image": "/assets/marthie/LM0001 - Barbara.jpg",
@@ -372,7 +731,7 @@ export default [
     "highlight": false
   },
   {
-    "id": 22,
+    "id": 55,
     "name": "Boneca LM0002 - Cris",
     "category": "Bonecas exclusivas",
     "image": "/assets/marthie/LM0002 - Cris.jpg",
@@ -384,7 +743,7 @@ export default [
     "highlight": false
   },
   {
-    "id": 23,
+    "id": 56,
     "name": "Boneca LM0003 - Josi",
     "category": "Bonecas exclusivas",
     "image": "/assets/marthie/LM0003 - Josi.jpg",
@@ -396,7 +755,7 @@ export default [
     "highlight": false
   },
   {
-    "id": 24,
+    "id": 57,
     "name": "Boneca LM0004 - Ana",
     "category": "Bonecas exclusivas",
     "image": "/assets/marthie/LM0004 - Ana.jpg",
@@ -408,7 +767,7 @@ export default [
     "highlight": false
   },
   {
-    "id": 25,
+    "id": 58,
     "name": "Boneca LM0005 - Marta",
     "category": "Bonecas exclusivas",
     "image": "/assets/marthie/LM0005 - Marta.jpg",
@@ -420,7 +779,7 @@ export default [
     "highlight": false
   },
   {
-    "id": 26,
+    "id": 59,
     "name": "Boneca LM0006 - Alice",
     "category": "Bonecas exclusivas",
     "image": "/assets/marthie/LM0006 - Alice.jpg",
@@ -432,7 +791,7 @@ export default [
     "highlight": false
   },
   {
-    "id": 27,
+    "id": 60,
     "name": "Boneca LM0007 - Cecília",
     "category": "Bonecas exclusivas",
     "image": "/assets/marthie/LM0007 - Cecília.jpg",
@@ -444,7 +803,7 @@ export default [
     "highlight": false
   },
   {
-    "id": 28,
+    "id": 61,
     "name": "Boneca LM0008 - Helena",
     "category": "Bonecas exclusivas",
     "image": "/assets/marthie/LM0008 - Helena.jpg",
@@ -456,7 +815,7 @@ export default [
     "highlight": false
   },
   {
-    "id": 29,
+    "id": 62,
     "name": "Boneca LM0009 - Laura",
     "category": "Bonecas exclusivas",
     "image": "/assets/marthie/LM0009 - Laura.jpg",
@@ -468,7 +827,7 @@ export default [
     "highlight": false
   },
   {
-    "id": 30,
+    "id": 63,
     "name": "Boneca LM0010 - Valentina",
     "category": "Bonecas exclusivas",
     "image": "/assets/marthie/LM0010 - Valentina.jpg",
@@ -480,7 +839,7 @@ export default [
     "highlight": false
   },
   {
-    "id": 31,
+    "id": 64,
     "name": "Boneca LM0011 - Martina",
     "category": "Bonecas exclusivas",
     "image": "/assets/marthie/LM0011 - Martina.jpg",
@@ -492,7 +851,7 @@ export default [
     "highlight": false
   },
   {
-    "id": 32,
+    "id": 65,
     "name": "Boneca LM0012 - Marina",
     "category": "Bonecas exclusivas",
     "image": "/assets/marthie/LM0012 - Marina.jpg",
@@ -504,7 +863,7 @@ export default [
     "highlight": false
   },
   {
-    "id": 33,
+    "id": 66,
     "name": "Boneca LM0013 - Camile",
     "category": "Bonecas exclusivas",
     "image": "/assets/marthie/LM0013 - Camile.jpg",
@@ -516,7 +875,7 @@ export default [
     "highlight": false
   },
   {
-    "id": 34,
+    "id": 67,
     "name": "Boneca LM0015 - Emmy",
     "category": "Bonecas exclusivas",
     "image": "/assets/marthie/LM0015 - Emmy.jpg",
@@ -528,7 +887,7 @@ export default [
     "highlight": false
   },
   {
-    "id": 35,
+    "id": 68,
     "name": "Boneca LM0016 - Maria",
     "category": "Bonecas exclusivas",
     "image": "/assets/marthie/LM0016 - Maria.jpg",
@@ -540,7 +899,7 @@ export default [
     "highlight": false
   },
   {
-    "id": 36,
+    "id": 69,
     "name": "Boneca LM0017 - Gabi",
     "category": "Bonecas exclusivas",
     "image": "/assets/marthie/LM0017 - Gabi.jpg",
@@ -552,7 +911,7 @@ export default [
     "highlight": false
   },
   {
-    "id": 37,
+    "id": 70,
     "name": "Boneca LM0018 - Janaina",
     "category": "Bonecas exclusivas",
     "image": "/assets/marthie/LM0018 - Janaina.jpg",
@@ -564,7 +923,7 @@ export default [
     "highlight": false
   },
   {
-    "id": 38,
+    "id": 71,
     "name": "Boneca LM0019 - Isabela",
     "category": "Bonecas exclusivas",
     "image": "/assets/marthie/LM0019 - Isabela.jpg",
@@ -576,7 +935,7 @@ export default [
     "highlight": false
   },
   {
-    "id": 39,
+    "id": 72,
     "name": "Boneca LM0020 - Bruna",
     "category": "Bonecas exclusivas",
     "image": "/assets/marthie/LM0020 - Bruna.jpg",
@@ -588,7 +947,7 @@ export default [
     "highlight": false
   },
   {
-    "id": 40,
+    "id": 73,
     "name": "Boneca LM0021 - Jéssica",
     "category": "Bonecas exclusivas",
     "image": "/assets/marthie/LM0021 - Jéssica.jpg",
@@ -600,7 +959,7 @@ export default [
     "highlight": false
   },
   {
-    "id": 41,
+    "id": 74,
     "name": "Boneca LM0022 - Lorena",
     "category": "Bonecas exclusivas",
     "image": "/assets/marthie/LM0022 - Lorena.jpg",
@@ -612,7 +971,7 @@ export default [
     "highlight": false
   },
   {
-    "id": 42,
+    "id": 75,
     "name": "Boneca LM0023 - Bebel",
     "category": "Bonecas exclusivas",
     "image": "/assets/marthie/LM0023 - Bebel.jpg",
@@ -621,959 +980,6 @@ export default [
     "sizes": [
       "Único"
     ],
-    "highlight": false
-  },
-  {
-    "id": 43,
-    "name": "Conjunto Marthiê Capa",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/Capa.jpg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 44,
-    "name": "Conjunto Marthiê MA0473 03",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0473 03.jpg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 45,
-    "name": "Conjunto Marthiê MA0473 04",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0473 04.jpg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 46,
-    "name": "Conjunto Marthiê MA0477 03",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0477 03.jpg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 47,
-    "name": "Conjunto Marthiê MA0477 04",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0477 04.jpg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 48,
-    "name": "Conjunto Marthiê MA0478 03",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0478 03.jpg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 49,
-    "name": "Conjunto Marthiê MA0480 03",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0480 03.jpg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 50,
-    "name": "Conjunto Marthiê MA0481 03",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0481 03.jpg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 51,
-    "name": "Conjunto Marthiê MA0481 04",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0481 04.jpg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 52,
-    "name": "Conjunto Marthiê MA0481 05",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0481 05.jpg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 53,
-    "name": "Conjunto Marthiê MA0488 02",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0488 02.jpg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 54,
-    "name": "Conjunto Marthiê MA0489 03",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/MA0489 03.jpg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 55,
-    "name": "Conjunto Marthiê WhatsApp Image 2026-05-16 at 11",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/WhatsApp Image 2026-05-16 at 11.02.22.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 56,
-    "name": "Conjunto Marthiê WhatsApp Image 2026-05-16 at 11",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/WhatsApp Image 2026-05-16 at 11.02.23.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 57,
-    "name": "Conjunto Marthiê WhatsApp Image 2026-05-16 at 11",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/WhatsApp Image 2026-05-16 at 11.02.25.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 58,
-    "name": "Conjunto Marthiê WhatsApp Image 2026-05-16 at 11",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/WhatsApp Image 2026-05-16 at 11.02.26.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 59,
-    "name": "Conjunto Marthiê WhatsApp Image 2026-05-16 at 11",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/WhatsApp Image 2026-05-16 at 11.02.27.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 60,
-    "name": "Conjunto Marthiê WhatsApp Image 2026-05-16 at 11",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/WhatsApp Image 2026-05-16 at 11.02.28.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 61,
-    "name": "Conjunto Marthiê WhatsApp Image 2026-05-16 at 11",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/WhatsApp Image 2026-05-16 at 11.02.29.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 62,
-    "name": "Conjunto Marthiê WhatsApp Image 2026-05-16 at 11",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/WhatsApp Image 2026-05-16 at 11.08.48.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 63,
-    "name": "Conjunto Marthiê bbbb",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/bbbb.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 64,
-    "name": "Conjunto Marthiê bbmenininha",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/bbmenininha.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 65,
-    "name": "Conjunto Marthiê bbrr",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/bbrr.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 66,
-    "name": "Moda Masculina beb3",
-    "category": "Menino",
-    "image": "/assets/marthie/beb3.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 67,
-    "name": "Moda Masculina bebe conjunto",
-    "category": "Menino",
-    "image": "/assets/marthie/bebe conjunto.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 68,
-    "name": "Moda Masculina bebe menino",
-    "category": "Menino",
-    "image": "/assets/marthie/bebe menino.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 69,
-    "name": "Moda Masculina bebe1",
-    "category": "Menino",
-    "image": "/assets/marthie/bebe1.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 70,
-    "name": "Moda Masculina bebe24",
-    "category": "Menino",
-    "image": "/assets/marthie/bebe24.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 71,
-    "name": "Conjunto Marthiê casaco2",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/casaco2.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 72,
-    "name": "Conjunto Marthiê casaco4",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/casaco4.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 73,
-    "name": "Moda Masculina casacomenino",
-    "category": "Menino",
-    "image": "/assets/marthie/casacomenino.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 74,
-    "name": "Moda Masculina meino 1",
-    "category": "Menino",
-    "image": "/assets/marthie/meino 1.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 75,
-    "name": "Conjunto Marthiê menina 7",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/menina 7.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 76,
-    "name": "Conjunto Marthiê menina mais mais mais",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/menina mais mais mais.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 77,
-    "name": "Conjunto Marthiê menina mais",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/menina mais.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 78,
-    "name": "Conjunto Marthiê menina yuy",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/menina yuy.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 79,
-    "name": "Conjunto Marthiê menina2",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/menina2.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 80,
-    "name": "Conjunto Marthiê menina8",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/menina8.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 81,
-    "name": "Conjunto Marthiê menina9",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/menina9.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 82,
-    "name": "Conjunto Marthiê meninamaismais",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/meninamaismais.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 83,
-    "name": "Conjunto Marthiê menini 34",
-    "category": "Menina de 1 até 12",
-    "image": "/assets/marthie/menini 34.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [
-      "2",
-      "4",
-      "6",
-      "8",
-      "10",
-      "12"
-    ],
-    "highlight": false
-  },
-  {
-    "id": 84,
-    "name": "Moda Masculina menino 10",
-    "category": "Menino",
-    "image": "/assets/marthie/menino 10.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 85,
-    "name": "Moda Masculina menino 11",
-    "category": "Menino",
-    "image": "/assets/marthie/menino 11.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 86,
-    "name": "Moda Masculina menino 12",
-    "category": "Menino",
-    "image": "/assets/marthie/menino 12.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 87,
-    "name": "Moda Masculina menino 13",
-    "category": "Menino",
-    "image": "/assets/marthie/menino 13.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 88,
-    "name": "Moda Masculina menino 15",
-    "category": "Menino",
-    "image": "/assets/marthie/menino 15.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 89,
-    "name": "Moda Masculina menino 16",
-    "category": "Menino",
-    "image": "/assets/marthie/menino 16.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 90,
-    "name": "Moda Masculina menino 17",
-    "category": "Menino",
-    "image": "/assets/marthie/menino 17.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 91,
-    "name": "Moda Masculina menino 18",
-    "category": "Menino",
-    "image": "/assets/marthie/menino 18.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 92,
-    "name": "Moda Masculina menino 2",
-    "category": "Menino",
-    "image": "/assets/marthie/menino 2.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 93,
-    "name": "Moda Masculina menino 22",
-    "category": "Menino",
-    "image": "/assets/marthie/menino 22.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 94,
-    "name": "Moda Masculina menino 23",
-    "category": "Menino",
-    "image": "/assets/marthie/menino 23.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 95,
-    "name": "Moda Masculina menino 3",
-    "category": "Menino",
-    "image": "/assets/marthie/menino 3.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 96,
-    "name": "Moda Masculina menino 4",
-    "category": "Menino",
-    "image": "/assets/marthie/menino 4.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 97,
-    "name": "Moda Masculina menino 5",
-    "category": "Menino",
-    "image": "/assets/marthie/menino 5.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 98,
-    "name": "Moda Masculina menino 8",
-    "category": "Menino",
-    "image": "/assets/marthie/menino 8.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 99,
-    "name": "Moda Masculina menino 9",
-    "category": "Menino",
-    "image": "/assets/marthie/menino 9.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 100,
-    "name": "Moda Masculina menino19",
-    "category": "Menino",
-    "image": "/assets/marthie/menino19.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 101,
-    "name": "Moda Masculina menino2",
-    "category": "Menino",
-    "image": "/assets/marthie/menino2.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 102,
-    "name": "Moda Masculina menino20",
-    "category": "Menino",
-    "image": "/assets/marthie/menino20.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 103,
-    "name": "Moda Masculina menino21",
-    "category": "Menino",
-    "image": "/assets/marthie/menino21.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 104,
-    "name": "Moda Masculina menino25",
-    "category": "Menino",
-    "image": "/assets/marthie/menino25.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 105,
-    "name": "Moda Masculina menino3333",
-    "category": "Menino",
-    "image": "/assets/marthie/menino3333.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 106,
-    "name": "Moda Masculina menino7",
-    "category": "Menino",
-    "image": "/assets/marthie/menino7.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
-    "highlight": false
-  },
-  {
-    "id": 107,
-    "name": "Moda Masculina tonho menino",
-    "category": "Menino",
-    "image": "/assets/marthie/tonho menino.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva da Villa Bambini.",
-    "sizes": [],
     "highlight": false
   }
 ];
