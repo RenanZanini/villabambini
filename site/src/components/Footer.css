@@ -26,9 +26,23 @@
 }
 
 .footer-tagline {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
+  font-family: var(--font-serif);
+  color: var(--color-surface);
+  line-height: 1.2;
+}
+
+.footer-description {
+  font-size: 0.85rem;
   line-height: 1.6;
-  max-width: 280px;
+  max-width: 320px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-legal {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.3);
+  margin-top: 8px;
 }
 
 .footer-links,

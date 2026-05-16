@@ -11,8 +11,13 @@ export default function Footer() {
           <div className="footer-brand">
             <img src="/assets/logo.jpg" alt="Villa Bambini" className="footer-logo" />
             <p className="footer-tagline">
-              Moda infantil com carinho, entregue na porta do seu lar.
+              Villa Bambini Boutique Infantil
             </p>
+            <p className="footer-description">
+              Uma curadoria de estilo pensada com carinho para os moradores do Terraville, 
+              mas sempre de portas abertas para levar nossa magia a todos os cantos através de encomendas.
+            </p>
+            <p className="footer-legal">CNPJ: 00.000.000/0001-00</p>
           </div>
 
           <div className="footer-links">
