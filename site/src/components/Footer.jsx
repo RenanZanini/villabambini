@@ -17,7 +17,7 @@ export default function Footer() {
               Uma curadoria de estilo pensada com carinho para os moradores do Terraville, 
               mas sempre de portas abertas para levar nossa magia a todos os cantos através de encomendas.
             </p>
-            <p className="footer-legal">CNPJ: 00.000.000/0001-00</p>
+            <p className="footer-legal">CNPJ: 65.669.336/0001-97</p>
           </div>
 
           <div className="footer-links">
