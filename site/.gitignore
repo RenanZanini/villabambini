@@ -1,4 +1,4 @@
-# Logs
+ï»¿# Logs
 logs
 *.log
 npm-debug.log*
@@ -26,8 +26,8 @@ dist-ssr
 .vercel
 
 # Ignorar pastas gigantes de fotos originais
-BONECAS/
-Marthiê*/
+
+
 
 *.mp4
 *.mov
