@@ -1,7 +1,37 @@
 .footer {
   background-color: var(--color-text-main);
   color: rgba(255, 255, 255, 0.7);
-  padding: 80px 0 0;
+  padding: 0; /* Removido o padding superior para o marquee colar no topo */
+}
+
+.brand-marquee {
+  width: 100%;
+  overflow: hidden;
+  background: white;
+  padding: 30px 0;
+  margin-bottom: 60px;
+}
+
+.marquee-content {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 40s linear infinite;
+  width: max-content;
+}
+
+.marquee-img {
+  height: 60px;
+  margin: 0 60px;
+  object-fit: contain;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.33%); }
+}
+
+.footer .container {
+  padding-top: 40px;
 }
 
 .footer-grid {

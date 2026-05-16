@@ -29,6 +29,13 @@
   font-family: var(--font-sans);
 }
 
+.consult-sizes-msg {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin: 12px 0 4px;
+}
+
 .filter-list {
   display: flex;
   flex-direction: column;

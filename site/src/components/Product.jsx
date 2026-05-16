@@ -54,16 +54,20 @@ export function ProductCard({ product, onAdd }) {
         <h3 className="product-name">{product.name}</h3>
 
         <div className="size-selector">
-          {product.sizes.map(size => (
-            <button
-              key={size}
-              className={`size-chip ${selectedSize === size ? 'active' : ''}`}
-              onClick={() => setSelectedSize(size)}
-              aria-label={`Tamanho ${size}`}
-            >
-              {size}
-            </button>
-          ))}
+          {product.sizes && product.sizes.length > 0 ? (
+            product.sizes.map(size => (
+              <button
+                key={size}
+                className={`size-chip ${selectedSize === size ? 'active' : ''}`}
+                onClick={() => setSelectedSize(size)}
+                aria-label={`Tamanho ${size}`}
+              >
+                {size}
+              </button>
+            ))
+          ) : (
+            <p className="consult-sizes-msg">Consulte tamanhos disponíveis</p>
+          )}
         </div>
 
         <div style={{ display: 'flex', gap: '8px', flexDirection: 'column' }}>
@@ -74,11 +78,11 @@ export function ProductCard({ product, onAdd }) {
             Consulte Valores
           </button>
           <button
-            className={`add-to-cart-btn btn-outline ${isAdding ? 'adding' : ''} ${!selectedSize ? 'disabled' : ''}`}
+            className={`add-to-cart-btn btn-outline ${isAdding ? 'adding' : ''} ${(!selectedSize && product.sizes.length > 0) ? 'disabled' : ''}`}
             onClick={handleAdd}
-            disabled={!selectedSize}
+            disabled={!selectedSize && product.sizes.length > 0}
           >
-            {isAdding ? '✓ Na Mala!' : selectedSize ? `Adicionar à Mala` : 'Selecione o tamanho'}
+            {isAdding ? '✓ Na Mala!' : (selectedSize || product.sizes.length === 0) ? `Adicionar à Mala` : 'Selecione o tamanho'}
           </button>
         </div>
       </div>
@@ -97,10 +101,8 @@ export function ProductGrid({ products, onAdd, onOpenCart }) {
   
   const categories = [
     'Destaques',
-    'Menina de 1 até 14',
-    'Menino tamanhos de 1 até 14',
-    'Baby menina 0 a 12 meses',
-    'Baby menino 0 a 12 meses',
+    'Menina de 1 até 12',
+    'Menino',
     'Bonecas exclusivas'
   ];
   
