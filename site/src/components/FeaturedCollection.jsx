@@ -7,6 +7,26 @@ export default function FeaturedCollection({ products, onAdd, onOpenCart }) {
   const [addingId, setAddingId] = useState(null);
 
   const [isPaused, setIsPaused] = useState(false);
+  const [zoomStyle, setZoomStyle] = useState({});
+
+  const handleMouseMove = (e) => {
+    const { left, top, width, height } = e.currentTarget.getBoundingClientRect();
+    const x = ((e.clientX - left) / width) * 100;
+    const y = ((e.clientY - top) / height) * 100;
+    setZoomStyle({
+      transform: 'scale(2.5)',
+      transformOrigin: `${x}% ${y}%`,
+      transition: 'none'
+    });
+  };
+
+  const handleMouseLeaveZoom = () => {
+    setZoomStyle({
+      transform: 'scale(1)',
+      transformOrigin: 'center center',
+      transition: 'transform 0.3s ease'
+    });
+  };
 
   // Filtrar apenas looks combinando (divulgação)
   const looks = products.filter(p => p.collection === 'menina-boneca' && p.category !== 'Boneca');
@@ -138,11 +158,16 @@ export default function FeaturedCollection({ products, onAdd, onOpenCart }) {
               <div className="featured-product-preview-container">
                 {/* Foto Menor de Detalhes da Peça */}
                 {currentSlide.hoverImage && (
-                  <div className="featured-small-preview">
+                  <div 
+                    className="featured-small-preview"
+                    onMouseMove={handleMouseMove}
+                    onMouseLeave={handleMouseLeaveZoom}
+                  >
                     <img
                       src={currentSlide.hoverImage}
                       alt={`${currentSlide.name} detalhes`}
                       className="featured-small-img"
+                      style={zoomStyle}
                     />
                     <span className="featured-preview-label">Ver Detalhes</span>
                   </div>
