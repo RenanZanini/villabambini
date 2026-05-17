@@ -10,6 +10,18 @@
 
   "overrides": [
     {
+      "name": "Baby 6",
+      "hidden": true
+    },
+    {
+      "name": "Look Combinando MA0476",
+      "sortOrder": 1
+    },
+    {
+      "name": "Look Combinando Capa",
+      "sortOrder": 7
+    },
+    {
       "_comment": "Todas as bonecas entram na coleção Menina Boneca automaticamente pelo rebuild_catalog.py",
       "_lembrete": "Adicione aqui novos destaques quando lançar novas peças"
     }

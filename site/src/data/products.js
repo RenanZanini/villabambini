@@ -1,13 +1,13 @@
 export default [
   {
     "id": 1,
-    "name": "Look Combinando Capa",
+    "name": "Look Combinando MA0476",
     "category": "Coleção Menina Boneca",
     "collection": "menina-boneca",
     "sortGroup": 1,
     "sortOrder": 1,
-    "image": "/assets/marthie/Capa 01.jpg",
-    "hoverImage": null,
+    "image": "/assets/marthie/MA0476 01.jpg",
+    "hoverImage": "/assets/marthie/MA0476 02.jpg",
     "price": 0,
     "description": "Look combinando menina & boneca Villa Bambini.",
     "sizes": [
@@ -133,13 +133,13 @@ export default [
   },
   {
     "id": 7,
-    "name": "Look Combinando MA0476",
+    "name": "Look Combinando Capa",
     "category": "Coleção Menina Boneca",
     "collection": "menina-boneca",
     "sortGroup": 1,
     "sortOrder": 7,
-    "image": "/assets/marthie/MA0476 01.jpg",
-    "hoverImage": "/assets/marthie/MA0476 02.jpg",
+    "image": "/assets/marthie/Capa 01.jpg",
+    "hoverImage": null,
     "price": 0,
     "description": "Look combinando menina & boneca Villa Bambini.",
     "sizes": [
@@ -405,7 +405,7 @@ export default [
     "image": "/assets/marthie/LM0001 - Barbara.jpg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -420,7 +420,7 @@ export default [
     "image": "/assets/marthie/LM0002 - Cris.jpg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -435,7 +435,7 @@ export default [
     "image": "/assets/marthie/LM0003 - Josi.jpg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -450,7 +450,7 @@ export default [
     "image": "/assets/marthie/LM0004 - Ana.jpg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -465,7 +465,7 @@ export default [
     "image": "/assets/marthie/LM0005 - Marta.jpg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -480,7 +480,7 @@ export default [
     "image": "/assets/marthie/LM0006 - Alice.jpg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -495,7 +495,7 @@ export default [
     "image": "/assets/marthie/LM0007 - Cecília.jpg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -510,7 +510,7 @@ export default [
     "image": "/assets/marthie/LM0008 - Helena.jpg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -525,7 +525,7 @@ export default [
     "image": "/assets/marthie/LM0009 - Laura.jpg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -540,7 +540,7 @@ export default [
     "image": "/assets/marthie/LM0010 - Valentina.jpg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -555,7 +555,7 @@ export default [
     "image": "/assets/marthie/LM0011 - Martina.jpg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -570,7 +570,7 @@ export default [
     "image": "/assets/marthie/LM0012 - Marina.jpg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -585,7 +585,7 @@ export default [
     "image": "/assets/marthie/LM0013 - Camile.jpg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -600,7 +600,7 @@ export default [
     "image": "/assets/marthie/LM0015 - Emmy.jpg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -615,7 +615,7 @@ export default [
     "image": "/assets/marthie/LM0016 - Maria.jpg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -630,7 +630,7 @@ export default [
     "image": "/assets/marthie/LM0017 - Gabi.jpg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -645,7 +645,7 @@ export default [
     "image": "/assets/marthie/LM0018 - Janaina.jpg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -660,7 +660,7 @@ export default [
     "image": "/assets/marthie/LM0019 - Isabela.jpg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -675,7 +675,7 @@ export default [
     "image": "/assets/marthie/LM0020 - Bruna.jpg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -690,7 +690,7 @@ export default [
     "image": "/assets/marthie/LM0021 - Jéssica.jpg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -705,7 +705,7 @@ export default [
     "image": "/assets/marthie/LM0022 - Lorena.jpg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -720,7 +720,7 @@ export default [
     "image": "/assets/marthie/LM0023 - Bebel.jpg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -735,7 +735,7 @@ export default [
     "image": "/assets/marthie/Casaco 4.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -750,7 +750,7 @@ export default [
     "image": "/assets/marthie/Menina 7.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -765,7 +765,7 @@ export default [
     "image": "/assets/marthie/Menina Jaqueta.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -780,7 +780,7 @@ export default [
     "image": "/assets/marthie/Menina casaco.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -795,7 +795,7 @@ export default [
     "image": "/assets/marthie/Menina conjunto 1.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -810,7 +810,7 @@ export default [
     "image": "/assets/marthie/Menina conjunto 2.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -825,7 +825,7 @@ export default [
     "image": "/assets/marthie/Menina conjunto 3.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -840,7 +840,7 @@ export default [
     "image": "/assets/marthie/Menina conjunto 5.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -855,7 +855,7 @@ export default [
     "image": "/assets/marthie/Menina conjunto 6.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -870,7 +870,7 @@ export default [
     "image": "/assets/marthie/Menina vestido 2.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -885,7 +885,7 @@ export default [
     "image": "/assets/marthie/Menina vestido rosa.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -900,7 +900,7 @@ export default [
     "image": "/assets/marthie/Casaco 1.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -915,7 +915,7 @@ export default [
     "image": "/assets/marthie/Casaco 2.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -930,7 +930,7 @@ export default [
     "image": "/assets/marthie/Menino 1.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -945,7 +945,7 @@ export default [
     "image": "/assets/marthie/Menino 10.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -960,7 +960,7 @@ export default [
     "image": "/assets/marthie/Menino 11.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -975,7 +975,7 @@ export default [
     "image": "/assets/marthie/Menino 12.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -990,7 +990,7 @@ export default [
     "image": "/assets/marthie/Menino 15.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1005,7 +1005,7 @@ export default [
     "image": "/assets/marthie/Menino 16.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1020,7 +1020,7 @@ export default [
     "image": "/assets/marthie/Menino 17.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1035,7 +1035,7 @@ export default [
     "image": "/assets/marthie/Menino 18.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1050,7 +1050,7 @@ export default [
     "image": "/assets/marthie/Menino 19.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1065,7 +1065,7 @@ export default [
     "image": "/assets/marthie/Menino 2.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1080,7 +1080,7 @@ export default [
     "image": "/assets/marthie/Menino 20.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1095,7 +1095,7 @@ export default [
     "image": "/assets/marthie/Menino 21.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1110,7 +1110,7 @@ export default [
     "image": "/assets/marthie/Menino 22.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1125,7 +1125,7 @@ export default [
     "image": "/assets/marthie/Menino 23.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1140,7 +1140,7 @@ export default [
     "image": "/assets/marthie/Menino 25.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1155,7 +1155,7 @@ export default [
     "image": "/assets/marthie/Menino 3.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1170,7 +1170,7 @@ export default [
     "image": "/assets/marthie/Menino 34.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1185,7 +1185,7 @@ export default [
     "image": "/assets/marthie/Menino 36.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1200,7 +1200,7 @@ export default [
     "image": "/assets/marthie/Menino 37.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1215,7 +1215,7 @@ export default [
     "image": "/assets/marthie/Menino 38.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1230,7 +1230,7 @@ export default [
     "image": "/assets/marthie/Menino 4.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1245,7 +1245,7 @@ export default [
     "image": "/assets/marthie/Menino 5.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1260,7 +1260,7 @@ export default [
     "image": "/assets/marthie/Menino 7.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1275,7 +1275,7 @@ export default [
     "image": "/assets/marthie/Menino 8.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1290,7 +1290,7 @@ export default [
     "image": "/assets/marthie/Menino 9.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1305,7 +1305,7 @@ export default [
     "image": "/assets/marthie/Menino Brasil.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1320,7 +1320,7 @@ export default [
     "image": "/assets/marthie/Menino conjunto 2.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1335,7 +1335,7 @@ export default [
     "image": "/assets/marthie/Menino conjunto 3.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1350,7 +1350,7 @@ export default [
     "image": "/assets/marthie/Menino conjunto 4.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1365,7 +1365,7 @@ export default [
     "image": "/assets/marthie/Baby menina.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1380,7 +1380,7 @@ export default [
     "image": "/assets/marthie/Baby menina 2.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1395,7 +1395,7 @@ export default [
     "image": "/assets/marthie/Baby 1.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1410,7 +1410,7 @@ export default [
     "image": "/assets/marthie/Baby 2.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1425,7 +1425,7 @@ export default [
     "image": "/assets/marthie/Baby 3.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1440,7 +1440,7 @@ export default [
     "image": "/assets/marthie/Baby 4.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
@@ -1455,67 +1455,52 @@ export default [
     "image": "/assets/marthie/Baby 5.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
   },
   {
     "id": 90,
-    "name": "Baby 6",
+    "name": "Baby conjunto 1",
     "category": "Baby Menino",
     "collection": null,
     "sortGroup": 0,
     "sortOrder": 90,
-    "image": "/assets/marthie/Baby 6.jpeg",
+    "image": "/assets/marthie/Baby conjunto 1.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
   },
   {
     "id": 91,
-    "name": "Baby conjunto 1",
+    "name": "Menino 13",
     "category": "Baby Menino",
     "collection": null,
     "sortGroup": 0,
     "sortOrder": 91,
-    "image": "/assets/marthie/Baby conjunto 1.jpeg",
+    "image": "/assets/marthie/Menino 13.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false
   },
   {
     "id": 92,
-    "name": "Menino 13",
-    "category": "Baby Menino",
-    "collection": null,
-    "sortGroup": 0,
-    "sortOrder": 92,
-    "image": "/assets/marthie/Menino 13.jpeg",
-    "hoverImage": null,
-    "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
-    "sizes": [],
-    "highlight": false,
-    "hidden": false
-  },
-  {
-    "id": 93,
     "name": "Menino conjunto 5",
     "category": "Baby Menino",
     "collection": null,
     "sortGroup": 0,
-    "sortOrder": 93,
+    "sortOrder": 92,
     "image": "/assets/marthie/Menino conjunto 5.jpeg",
     "hoverImage": null,
     "price": 0,
-    "description": "Peça exclusiva La Villa Bambini.",
+    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
     "sizes": [],
     "highlight": false,
     "hidden": false

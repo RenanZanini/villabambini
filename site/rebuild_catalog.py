@@ -186,7 +186,7 @@ def build_products(overrides: dict, dry_run: bool = False) -> list:
                     "image":       f"/assets/marthie/{dest_file}",
                     "hoverImage":  None,
                     "price":       0,
-                    "description": "Peça exclusiva La Villa Bambini.",
+                    "description": "Peça selecionada com carinho pela curadoria Marthiê.",
                     "sizes":       [],
                     "highlight":   cfg["highlight"],
                     "hidden":      False,
