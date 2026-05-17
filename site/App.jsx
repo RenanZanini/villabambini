@@ -3,26 +3,24 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import HowItWorks from './components/HowItWorks';
 import AboutUs from './components/AboutUs';
+import FeaturedCollection from './components/FeaturedCollection';
 import { ProductGrid } from './components/Product';
 import CartDrawer from './components/CartDrawer';
 import Footer from './components/Footer';
 import products from './data/products';
-import FeaturedCollection from './components/FeaturedCollection';
 import './index.css';
 
-// Número de WhatsApp atualizado
 const WHATSAPP_NUMBER = '555193732396';
-
-// TODO: Substituir pela URL do Google Apps Script após configurar a planilha
 const GOOGLE_SHEET_URL = '';
 
+// ── Separar coleção principal do catálogo geral ───────────────────────────────
 const featuredProducts = products.filter(p => p.collection === 'menina-boneca');
 const catalogProducts  = products.filter(p => p.collection !== 'menina-boneca');
 
 function App() {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart]           = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
-  const [toast, setToast] = useState({ show: false, message: '' });
+  const [toast, setToast]         = useState({ show: false, message: '' });
 
   const showToast = useCallback((message) => {
     setToast({ show: true, message });
@@ -38,25 +36,24 @@ function App() {
     setCart(prev => prev.filter((_, index) => index !== indexToRemove));
   }, []);
 
-  // Salvar pedido na Google Sheets (se configurado)
   const saveToSheet = async (formData, items, total) => {
     if (!GOOGLE_SHEET_URL) return;
     try {
       const payload = {
-        timestamp: new Date().toLocaleString('pt-BR'),
-        nome: formData.name,
+        timestamp:    new Date().toLocaleString('pt-BR'),
+        nome:         formData.name,
         nome_crianca: formData.childName,
-        endereco: formData.apt,
-        pecas: items.map(i => i.name + ' (Tam. ' + i.selectedSize + ')').join(', '),
-        quantidade: items.length,
-        total: 'R$ ' + total.toFixed(2),
-        status: 'Novo',
+        endereco:     formData.apt,
+        pecas:        items.map(i => i.name + ' (Tam. ' + i.selectedSize + ')').join(', '),
+        quantidade:   items.length,
+        total:        'R$ ' + total.toFixed(2),
+        status:       'Novo',
       };
       await fetch(GOOGLE_SHEET_URL, {
         method: 'POST',
-        mode: 'no-cors',
+        mode:   'no-cors',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
+        body:    JSON.stringify(payload),
       });
     } catch (err) {
       console.warn('Falha ao salvar na planilha:', err);
@@ -68,30 +65,18 @@ function App() {
     message += 'Gostaria de solicitar uma *Mala de Estilo*.\n\n';
     message += '*Meus Dados:*\n';
     message += 'Nome: ' + formData.name + '\n';
-    if (formData.childName) {
-      message += 'Crianca: ' + formData.childName + '\n';
-    }
+    if (formData.childName) message += 'Crianca: ' + formData.childName + '\n';
     message += 'Endereco (Vila/Casa): ' + formData.apt + '\n\n';
     message += '*Pecas Selecionadas:*\n';
-
     cart.forEach((item, index) => {
       message += (index + 1) + '. ' + item.name + ' - Tam. ' + item.selectedSize + '\n';
     });
-
     const total = cart.reduce((sum, item) => sum + item.price, 0);
-    // message += '\n*Total estimado:* R$ ' + total.toFixed(2); // Preços ocultos (Consulte Valores)
     message += '\n*Qtd. de pecas:* ' + cart.length;
     message += '\n\nAguardo confirmacao para entrega!';
-
-    // Salvar na planilha
     saveToSheet(formData, cart, total);
-
     const encodedMessage = encodeURIComponent(message);
     window.open('https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodedMessage, '_blank');
-    // We don't close the cart immediately now, the CartDrawer shows success view
-    // and clears its own state when closed.
-    // However, we can clear the cart items in App.jsx now or wait.
-    // If we clear now, the success view in CartDrawer won't show items (but it doesn't need to).
     setCart([]);
     showToast('Mala solicitada com sucesso!');
   }, [cart, showToast]);
@@ -103,16 +88,21 @@ function App() {
       <main>
         <Hero />
         <HowItWorks />
+
+        {/* 1. COLEÇÃO PRINCIPAL — Menina Boneca (destaque editorial) */}
         <FeaturedCollection
           products={featuredProducts}
           onAdd={handleAddToCart}
           onOpenCart={() => setIsCartOpen(true)}
         />
+
+        {/* 2. CATÁLOGO GERAL — Menino, Menina, Baby (sem Bonecas exclusivas) */}
         <ProductGrid
           products={catalogProducts}
           onAdd={handleAddToCart}
           onOpenCart={() => setIsCartOpen(true)}
         />
+
         <AboutUs />
       </main>
 

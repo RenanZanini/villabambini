@@ -1,92 +1,194 @@
+"""
+rebuild_catalog.py — La Villa Bambini
+Reconstrói products.js a partir das 4 pastas de material.
+
+Estrutura esperada em /material:
+  meninas/        → categoria "Menina"    (roupas sem boneca)
+  meninos/        → categoria "Menino"    (roupas masculinas)
+  bonecas/        → categoria "Boneca"    (aparece NO FINAL da coleção hero)
+  divulgacao/     → Coleção "Menina Boneca" (fotos das meninas com bonecas iguais)
+
+TODOS os tamanhos são "Consultar" — nenhum chip obrigatório.
+
+Como usar:
+  python rebuild_catalog.py              # pede confirmação se já existir
+  python rebuild_catalog.py --force      # sobrescreve sem confirmar
+  python rebuild_catalog.py --dry-run    # mostra o que faria, sem gravar
+"""
+
 import os
 import json
 import shutil
+import argparse
+from pathlib import Path
 
-base_path = r"c:\Users\RENAN ZANINI PORTO\Desktop\NEXX_AI\lavillabambini"
-material_path = os.path.join(base_path, "material")
-assets_path = os.path.join(base_path, "site", "public", "assets", "marthie")
-products_file = os.path.join(base_path, "site", "src", "data", "products.js")
+# ── Caminhos — ajuste BASE se necessário ──────────────────────────────────────
+BASE       = Path(r"c:\Users\RENAN ZANINI PORTO\Desktop\NEXX_AI\lavillabambini")
+MATERIAL   = BASE / "material"
+ASSETS_OUT = BASE / "site" / "public" / "assets" / "marthie"
+PRODUCTS   = BASE / "site" / "src" / "data" / "products.js"
+OVERRIDES  = Path(__file__).parent / "overrides.json"
 
-# Configurações de Categorias e Pastas
-folders = {
-    "Menina de 1 até 12": os.path.join(material_path, "meninas"),
-    "Menino": os.path.join(material_path, "meninos"),
-    "Bonecas exclusivas": os.path.join(material_path, "BONECAS-20260516T044646Z-3-001", "BONECAS")
+# ── Mapeamento pasta → metadados ───────────────────────────────────────────────
+FOLDER_CONFIG = {
+    "divulgacao": {
+        "pasta":      MATERIAL / "divulgacao",
+        "category":   "Coleção Menina Boneca",
+        "collection": "menina-boneca",
+        "sortGroup":  1,
+        "highlight":  True,
+    },
+    "bonecas": {
+        "pasta":      MATERIAL / "bonecas",
+        "category":   "Boneca",
+        "collection": "menina-boneca",
+        "sortGroup":  2,
+        "highlight":  False,
+    },
+    "meninas": {
+        "pasta":      MATERIAL / "meninas",
+        "category":   "Menina",
+        "collection": None,
+        "sortGroup":  0,
+        "highlight":  False,
+    },
+    "meninos": {
+        "pasta":      MATERIAL / "meninos",
+        "category":   "Menino",
+        "collection": None,
+        "sortGroup":  0,
+        "highlight":  False,
+    },
 }
 
-# Destaques específicos (Meninas com Bonecas)
-highlight_files = [
-    "Capa",
-    "Menina conjunto 1",
-    "Menina conjunto 3",
-    "Menina conjunto 6",
-    "Menina vestido 2",
-    "Menina vestido rosa"
-]
+# Pasta alternativa para bonecas (nome longo do Google Drive)
+BONECAS_ALT = MATERIAL / "BONECAS-20260516T044646Z-3-001" / "BONECAS"
+LANCO_ALT   = MATERIAL / "Fotos_lançamento"
 
-new_products = []
-next_id = 1
 
-sizes_menina = ["2", "4", "6", "8", "10", "12"]
-sizes_baby = ["0-3m", "3-6m", "6-9m", "9-12m"]
-
-# Garantir que a pasta de assets existe e está limpa (opcional, mas seguro)
-if not os.path.exists(assets_path):
-    os.makedirs(assets_path)
-
-for category, folder_path in folders.items():
-    if not os.path.exists(folder_path):
-        print(f"Aviso: Pasta não encontrada: {folder_path}")
-        continue
-        
-    files = os.listdir(folder_path)
-    for f in files:
-        if not f.lower().endswith(('.jpg', '.jpeg', '.png')):
+def load_overrides() -> dict:
+    if not OVERRIDES.exists():
+        print(f"[INFO] overrides.json não encontrado.")
+        return {}
+    with open(OVERRIDES, encoding="utf-8") as f:
+        data = json.load(f)
+    result = {}
+    for entry in data.get("overrides", []):
+        if "_comment" in entry or "name" not in entry:
             continue
-            
-        # Determinar nome e se é Baby
-        name = f.split('.')[0]
-        f_lower = f.lower()
-        
-        current_category = category
-        current_sizes = sizes_menina
-        
-        if "baby" in f_lower or "beb" in f_lower:
-            current_category = "Baby"
-            current_sizes = sizes_baby
-        elif category == "Menino":
-            current_sizes = []
-        elif category == "Bonecas exclusivas":
-            current_sizes = ["Único"]
+        result[entry["name"]] = {k: v for k, v in entry.items() if k != "name"}
+    print(f"[OK] {len(result)} override(s) carregado(s).")
+    return result
 
-        is_highlight = name in highlight_files
-        
-        # Copiar para assets com o nome correto (Garantindo Uppercase no início)
-        dest_name = name[0].upper() + name[1:] if len(name) > 0 else name
-        dest_filename = f"{dest_name}{os.path.splitext(f)[1].lower()}"
-        shutil.copy2(os.path.join(folder_path, f), os.path.join(assets_path, dest_filename))
 
-        new_products.append({
-            "id": next_id,
-            "name": dest_name,
-            "category": current_category,
-            "image": f"/assets/marthie/{dest_filename}",
-            "hoverImage": None,
-            "price": 0,
-            "description": "Peça exclusiva Villa Bambini.",
-            "sizes": current_sizes,
-            "highlight": is_highlight
-        })
-        next_id += 1
+def build_products(overrides: dict, dry_run: bool = False) -> list:
+    if not dry_run:
+        ASSETS_OUT.mkdir(parents=True, exist_ok=True)
 
-# ORDENAÇÃO: Destaques primeiro, depois o resto
-new_products.sort(key=lambda p: (not p['highlight'], p['category'], p['name']))
+    products = []
+    next_id  = 1
 
-# Corrigir IDs após ordenação
-for i, p in enumerate(new_products):
-    p['id'] = i + 1
+    for key, cfg in FOLDER_CONFIG.items():
+        pasta = cfg["pasta"]
 
-with open(products_file, 'w', encoding='utf-8') as f:
-    f.write("export default " + json.dumps(new_products, indent=2, ensure_ascii=False) + ";")
+        if key == "divulgacao" and not pasta.exists() and LANCO_ALT.exists():
+            pasta = LANCO_ALT
+            print(f"[INFO] Usando pasta alternativa para divulgacao: {pasta}")
 
-print(f"Catálogo reconstruído com {len(new_products)} itens. {sum(1 for p in new_products if p['highlight'])} destaques movidos para o topo.")
+        if key == "bonecas" and not pasta.exists() and BONECAS_ALT.exists():
+            pasta = BONECAS_ALT
+            print(f"[INFO] Usando pasta alternativa para bonecas: {pasta}")
+
+        if not pasta.exists():
+            print(f"[AVISO] Pasta não encontrada: {pasta}")
+            continue
+
+        imgs = [f for f in sorted(pasta.iterdir()) if f.suffix.lower() in {".jpg",".jpeg",".png"}]
+        print(f"[{key.upper()}] {len(imgs)} imagens")
+
+        for f in imgs:
+            stem      = f.stem
+            dest_name = stem[0].upper() + stem[1:] if stem else stem
+            dest_file = dest_name + f.suffix.lower()
+            dest_path = ASSETS_OUT / dest_file
+
+            if not dry_run:
+                shutil.copy2(f, dest_path)
+
+            product = {
+                "id":          next_id,
+                "name":        dest_name,
+                "category":    cfg["category"],
+                "collection":  cfg["collection"],
+                "sortGroup":   cfg["sortGroup"],
+                "sortOrder":   next_id,
+                "image":       f"/assets/marthie/{dest_file}",
+                "hoverImage":  None,
+                "price":       0,
+                "description": "Peça exclusiva La Villa Bambini.",
+                "sizes":       [],
+                "highlight":   cfg["highlight"],
+                "hidden":      False,
+            }
+
+            ov = overrides.get(dest_name, {})
+            product.update(ov)
+
+            if product.get("hidden"):
+                print(f"  [OCULTO] {dest_name}")
+                continue
+
+            products.append(product)
+            next_id += 1
+
+    return products
+
+
+def sort_products(products: list) -> list:
+    CATALOG_ORDER = {"Menina": 0, "Menino": 1}
+
+    def key(p):
+        if p.get("collection") == "menina-boneca":
+            return (0, p.get("sortGroup", 9), p.get("sortOrder", 999), p["name"])
+        else:
+            return (1, CATALOG_ORDER.get(p["category"], 9), 0, p["name"])
+
+    products.sort(key=key)
+    for i, p in enumerate(products):
+        p["id"] = i + 1
+    return products
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--force",   action="store_true")
+    parser.add_argument("--dry-run", action="store_true")
+    args = parser.parse_args()
+
+    if PRODUCTS.exists() and not args.force and not args.dry_run:
+        resp = input("products.js já existe. Sobrescrever? [s/N] ").strip().lower()
+        if resp != "s":
+            print("Cancelado.")
+            return
+
+    overrides = load_overrides()
+    products  = build_products(overrides, dry_run=args.dry_run)
+    products  = sort_products(products)
+
+    n_hero   = sum(1 for p in products if p.get("collection") == "menina-boneca")
+    n_menina = sum(1 for p in products if p.get("category") == "Menina")
+    n_menino = sum(1 for p in products if p.get("category") == "Menino")
+
+    print(f"\n{'[DRY-RUN] ' if args.dry_run else ''}Resumo:")
+    print(f"  Colecao Menina Boneca: {n_hero} pecas")
+    print(f"  Menina:  {n_menina} | Menino: {n_menino}")
+    print(f"  Total:   {len(products)} produtos")
+
+    if not args.dry_run:
+        with open(PRODUCTS, "w", encoding="utf-8") as f:
+            f.write("export default " + json.dumps(products, indent=2, ensure_ascii=False) + ";\n")
+        print(f"  Gravado em: {PRODUCTS}")
+
+
+if __name__ == "__main__":
+    main()

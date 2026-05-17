@@ -1,0 +1,285 @@
+/* ── FeaturedCollection — La Villa Bambini ─────────────────────────────────── */
+
+.featured-collection {
+  padding: 100px 0 80px;
+  background: linear-gradient(
+    180deg,
+    var(--color-bg) 0%,
+    #fdf6f0 40%,
+    var(--color-bg) 100%
+  );
+}
+
+/* Cabeçalho */
+.fc-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.fc-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-accent);
+  background: var(--color-surface);
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 20px;
+}
+
+.fc-title {
+  font-size: 3rem;
+  font-family: var(--font-serif);
+  color: var(--color-text-main);
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+
+.fc-title em {
+  color: var(--color-primary-dark);
+  font-style: italic;
+}
+
+.fc-subtitle {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Grid editorial — mix de tamanhos para look magazine */
+.fc-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  margin-bottom: 48px;
+}
+
+/* Card padrão: 4 colunas (3 cards por linha) */
+.fc-card {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-xs);
+  transition: var(--transition-smooth);
+}
+
+/* Card Hero (primeiro): ocupa 8 colunas */
+.fc-card--hero {
+  grid-column: span 8;
+}
+
+/* Card Boneca: menor, 3 colunas */
+.fc-card--boneca {
+  grid-column: span 3;
+}
+
+/* Compensar depois dos 2 heroes (span 8 + span 4 = 12) e bonecas (4x3=12) */
+
+.fc-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Imagem */
+.fc-card-image {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-bg);
+}
+
+/* Proporção diferente por tipo */
+.fc-card-image {
+  aspect-ratio: 3 / 4;
+}
+
+.fc-card--hero .fc-card-image {
+  aspect-ratio: 4 / 5;
+}
+
+.fc-card--boneca .fc-card-image {
+  aspect-ratio: 2 / 3;
+}
+
+.fc-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.fc-card:hover .fc-card-image img {
+  transform: scale(1.04);
+}
+
+/* Tags */
+.fc-tag-boneca,
+.fc-tag-destaque {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.5px;
+}
+
+.fc-tag-boneca {
+  background: var(--color-primary);
+  color: var(--color-text-main);
+}
+
+.fc-tag-destaque {
+  background: var(--color-accent);
+  color: white;
+}
+
+/* Info */
+.fc-card-info {
+  padding: 18px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.fc-card-category {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--color-text-light);
+  font-weight: 500;
+}
+
+.fc-card-name {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-text-main);
+}
+
+/* Tamanhos */
+.fc-sizes {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+.fc-size-chip {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--color-border);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  background: transparent;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fc-size-chip:hover {
+  border-color: var(--color-primary);
+  color: var(--color-text-main);
+}
+
+.fc-size-chip.active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-text-main);
+}
+
+/* Botão */
+.fc-add-btn {
+  margin-top: 10px;
+  padding: 11px;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-weight: 600;
+  background: var(--color-text-main);
+  color: var(--color-surface);
+  transition: var(--transition-fast);
+  cursor: pointer;
+  border: none;
+  width: 100%;
+}
+
+.fc-add-btn:hover:not(.disabled) {
+  background: var(--color-accent);
+}
+
+.fc-add-btn.disabled {
+  background: var(--color-border);
+  color: var(--color-text-light);
+  cursor: not-allowed;
+}
+
+.fc-add-btn.adding {
+  background: var(--color-success, #4caf50);
+  color: white;
+}
+
+/* CTA central */
+.fc-cta {
+  text-align: center;
+  padding-top: 16px;
+}
+
+.fc-cta-btn {
+  padding: 14px 40px;
+  font-size: 0.95rem;
+}
+
+/* ── Responsivo ─────────────────────────────────────────────────────────────── */
+@media (max-width: 1100px) {
+  .fc-card--hero {
+    grid-column: span 12;
+  }
+
+  .fc-card {
+    grid-column: span 6;
+  }
+
+  .fc-card--boneca {
+    grid-column: span 4;
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-collection {
+    padding: 60px 0 50px;
+  }
+
+  .fc-title {
+    font-size: 2.2rem;
+  }
+
+  .fc-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .fc-card,
+  .fc-card--hero,
+  .fc-card--boneca {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .fc-grid {
+    grid-template-columns: 1fr;
+  }
+}

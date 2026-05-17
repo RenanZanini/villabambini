@@ -1,0 +1,47 @@
+{
+  "_comment": "Curadoria manual da Villa Bambini. Edite aqui sem mexer no rebuild_catalog.py",
+  "_instrucoes": {
+    "collection": "menina-boneca | null — define se a peça entra na vitrine principal",
+    "sortOrder": "número — ordem dentro da coleção (menor = primeiro)",
+    "highlight": "true/false — aparece em destaque visual",
+    "sizes": "substitui os tamanhos automáticos. Use [] para Menino (vai mostrar 'Consultar')",
+    "hidden": "true — remove do catálogo sem apagar a foto"
+  },
+
+  "overrides": [
+    {
+      "name": "Menina conjunto 1",
+      "collection": "menina-boneca",
+      "sortOrder": 1,
+      "highlight": true
+    },
+    {
+      "name": "Menina conjunto 3",
+      "collection": "menina-boneca",
+      "sortOrder": 2,
+      "highlight": true
+    },
+    {
+      "name": "Menina conjunto 6",
+      "collection": "menina-boneca",
+      "sortOrder": 3,
+      "highlight": true
+    },
+    {
+      "name": "Menina vestido 2",
+      "collection": "menina-boneca",
+      "sortOrder": 4,
+      "highlight": true
+    },
+    {
+      "name": "Menina vestido rosa",
+      "collection": "menina-boneca",
+      "sortOrder": 5,
+      "highlight": true
+    },
+    {
+      "_comment": "Todas as bonecas entram na coleção Menina Boneca automaticamente pelo rebuild_catalog.py",
+      "_lembrete": "Adicione aqui novos destaques quando lançar novas peças"
+    }
+  ]
+}

@@ -18,12 +18,14 @@ export function ProductCard({ product, onAdd }) {
   const handleAdd = () => {
     if (!selectedSize && product.sizes && product.sizes.length > 0) return;
     setIsAdding(true);
-    onAdd({ ...product, selectedSize: selectedSize || "A definir" });
+    onAdd({ ...product, selectedSize: selectedSize || 'Consultar' });
     setTimeout(() => {
       setIsAdding(false);
       setSelectedSize(null);
     }, 600);
   };
+
+  const canAdd = !product.sizes || product.sizes.length === 0 || !!selectedSize;
 
   return (
     <div className="product-card">
@@ -60,13 +62,12 @@ export function ProductCard({ product, onAdd }) {
                 key={size}
                 className={`size-chip ${selectedSize === size ? 'active' : ''}`}
                 onClick={() => setSelectedSize(size)}
-                aria-label={`Tamanho ${size}`}
               >
                 {size}
               </button>
             ))
           ) : (
-            <p className="consult-sizes-msg">Consulte tamanhos disponíveis</p>
+            <p className="consult-sizes-msg">Consulte tamanhos e valores</p>
           )}
         </div>
 
@@ -78,9 +79,9 @@ export function ProductCard({ product, onAdd }) {
             Consulte Valores
           </button>
           <button
-            className={`add-to-cart-btn btn-outline ${isAdding ? 'adding' : ''} ${(!selectedSize && product.sizes.length > 0) ? 'disabled' : ''}`}
+            className={`add-to-cart-btn btn-outline ${isAdding ? 'adding' : ''} ${!canAdd ? 'disabled' : ''}`}
             onClick={handleAdd}
-            disabled={!selectedSize && product.sizes.length > 0}
+            disabled={!canAdd}
           >
             {isAdding ? '✓ Na Mala!' : (selectedSize || product.sizes.length === 0) ? `Adicionar à Mala` : 'Selecione o tamanho'}
           </button>
@@ -91,7 +92,7 @@ export function ProductCard({ product, onAdd }) {
 }
 
 export function ProductGrid({ products, onAdd, onOpenCart }) {
-  const [filter, setFilter] = useState('Destaques');
+  const [filter, setFilter] = useState('Todos');
 
   useEffect(() => {
     const handler = (e) => setFilter(e.detail);
@@ -100,15 +101,16 @@ export function ProductGrid({ products, onAdd, onOpenCart }) {
   }, []);
   
   const categories = [
-    'Destaques',
-    'Menina de 1 até 12',
-    'Menino',
-    'Baby',
-    'Bonecas exclusivas'
+    'Todos',
+    ...new Set(
+      products
+        .map(p => p.category)
+        .filter(cat => cat !== 'Bonecas exclusivas' && cat !== 'Boneca' && cat !== 'Coleção Menina Boneca')
+    ),
   ];
   
-  const filtered = filter === 'Destaques' 
-    ? products.filter(p => p.highlight) 
+  const filtered = filter === 'Todos' 
+    ? products 
     : products.filter(p => p.category === filter);
 
   return (
