@@ -13,7 +13,8 @@ export default function Header({ cartCount, onOpenCart }) {
         <nav className="nav-links" aria-label="Navegação principal">
           <a href="#home">Início</a>
           <a href="#how-it-works">Como Funciona</a>
-          <a href="#catalog">Coleção</a>
+          <a href="#featured-collection">Coleção</a>
+          <a href="#catalog">Departamentos</a>
         </nav>
 
         <button
