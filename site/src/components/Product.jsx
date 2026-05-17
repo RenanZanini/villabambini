@@ -92,7 +92,7 @@ export function ProductCard({ product, onAdd }) {
 }
 
 export function ProductGrid({ products, onAdd, onOpenCart }) {
-  const [filter, setFilter] = useState('Todos');
+  const [filter, setFilter] = useState('Coleção Menina & Boneca');
 
   useEffect(() => {
     const handler = (e) => setFilter(e.detail);
@@ -101,16 +101,15 @@ export function ProductGrid({ products, onAdd, onOpenCart }) {
   }, []);
   
   const categories = [
-    'Todos',
-    ...new Set(
-      products
-        .map(p => p.category)
-        .filter(cat => cat !== 'Bonecas exclusivas' && cat !== 'Boneca' && cat !== 'Coleção Menina Boneca')
-    ),
+    'Coleção Menina & Boneca',
+    'Menina',
+    'Menino',
+    'Baby Menina',
+    'Baby Menino'
   ];
   
-  const filtered = filter === 'Todos' 
-    ? products 
+  const filtered = filter === 'Coleção Menina & Boneca' 
+    ? products.filter(p => p.collection === 'menina-boneca') 
     : products.filter(p => p.category === filter);
 
   return (

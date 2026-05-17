@@ -10,36 +10,6 @@
 
   "overrides": [
     {
-      "name": "Menina conjunto 1",
-      "collection": "menina-boneca",
-      "sortOrder": 1,
-      "highlight": true
-    },
-    {
-      "name": "Menina conjunto 3",
-      "collection": "menina-boneca",
-      "sortOrder": 2,
-      "highlight": true
-    },
-    {
-      "name": "Menina conjunto 6",
-      "collection": "menina-boneca",
-      "sortOrder": 3,
-      "highlight": true
-    },
-    {
-      "name": "Menina vestido 2",
-      "collection": "menina-boneca",
-      "sortOrder": 4,
-      "highlight": true
-    },
-    {
-      "name": "Menina vestido rosa",
-      "collection": "menina-boneca",
-      "sortOrder": 5,
-      "highlight": true
-    },
-    {
       "_comment": "Todas as bonecas entram na coleção Menina Boneca automaticamente pelo rebuild_catalog.py",
       "_lembrete": "Adicione aqui novos destaques quando lançar novas peças"
     }

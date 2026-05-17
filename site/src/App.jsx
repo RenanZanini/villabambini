@@ -7,7 +7,6 @@ import { ProductGrid } from './components/Product';
 import CartDrawer from './components/CartDrawer';
 import Footer from './components/Footer';
 import products from './data/products';
-import FeaturedCollection from './components/FeaturedCollection';
 import './index.css';
 
 // Número de WhatsApp atualizado
@@ -15,9 +14,6 @@ const WHATSAPP_NUMBER = '555193732396';
 
 // TODO: Substituir pela URL do Google Apps Script após configurar a planilha
 const GOOGLE_SHEET_URL = '';
-
-const featuredProducts = products.filter(p => p.collection === 'menina-boneca');
-const catalogProducts  = products.filter(p => p.collection !== 'menina-boneca');
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -101,15 +97,10 @@ function App() {
       <Header cartCount={cart.length} onOpenCart={() => setIsCartOpen(true)} />
 
       <main>
-        <Hero />
+        <Hero products={products} onAdd={handleAddToCart} />
         <HowItWorks />
-        <FeaturedCollection
-          products={featuredProducts}
-          onAdd={handleAddToCart}
-          onOpenCart={() => setIsCartOpen(true)}
-        />
         <ProductGrid
-          products={catalogProducts}
+          products={products}
           onAdd={handleAddToCart}
           onOpenCart={() => setIsCartOpen(true)}
         />

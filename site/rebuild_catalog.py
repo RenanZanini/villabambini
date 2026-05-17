@@ -106,46 +106,117 @@ def build_products(overrides: dict, dry_run: bool = False) -> list:
         imgs = [f for f in sorted(pasta.iterdir()) if f.suffix.lower() in {".jpg",".jpeg",".png"}]
         print(f"[{key.upper()}] {len(imgs)} imagens")
 
-        for f in imgs:
-            stem      = f.stem
-            dest_name = stem[0].upper() + stem[1:] if stem else stem
-            dest_file = dest_name + f.suffix.lower()
-            dest_path = ASSETS_OUT / dest_file
+        if key == "divulgacao":
+            # Group by base prefix (e.g. MA0471)
+            groups = {}
+            for f in imgs:
+                parts = f.stem.split(' ')
+                prefix = parts[0]
+                if prefix not in groups:
+                    groups[prefix] = []
+                groups[prefix].append(f)
+            
+            print(f"  [PAIRED] Agrupados em {len(groups)} conjuntos de produtos")
+            
+            for prefix, files in sorted(groups.items()):
+                # Sort files to ensure 01 is first, 02 is second
+                files = sorted(files, key=lambda x: x.name)
+                f_main = files[0]
+                f_hover = files[1] if len(files) > 1 else None
+                
+                stem = prefix
+                dest_name = f"Look Combinando {stem}"
+                
+                # Copy main
+                dest_file = stem + " 01" + f_main.suffix.lower()
+                if not dry_run:
+                    shutil.copy2(f_main, ASSETS_OUT / dest_file)
+                
+                # Copy hover if exists
+                hover_file = None
+                if f_hover:
+                    hover_file = stem + " 02" + f_hover.suffix.lower()
+                    if not dry_run:
+                        shutil.copy2(f_hover, ASSETS_OUT / hover_file)
+                
+                product = {
+                    "id":          next_id,
+                    "name":        dest_name,
+                    "category":    cfg["category"],
+                    "collection":  cfg["collection"],
+                    "sortGroup":   cfg["sortGroup"],
+                    "sortOrder":   next_id,
+                    "image":       f"/assets/marthie/{dest_file}",
+                    "hoverImage":  f"/assets/marthie/{hover_file}" if hover_file else None,
+                    "price":       0,
+                    "description": "Look combinando menina & boneca Villa Bambini.",
+                    "sizes":       ["2", "4", "6", "8", "10", "12"],
+                    "highlight":   cfg["highlight"],
+                    "hidden":      False,
+                }
+                
+                ov = overrides.get(dest_name, {})
+                product.update(ov)
 
-            if not dry_run:
-                shutil.copy2(f, dest_path)
+                if product.get("hidden"):
+                    print(f"  [OCULTO] {dest_name}")
+                    continue
 
-            product = {
-                "id":          next_id,
-                "name":        dest_name,
-                "category":    cfg["category"],
-                "collection":  cfg["collection"],
-                "sortGroup":   cfg["sortGroup"],
-                "sortOrder":   next_id,
-                "image":       f"/assets/marthie/{dest_file}",
-                "hoverImage":  None,
-                "price":       0,
-                "description": "Peça exclusiva La Villa Bambini.",
-                "sizes":       [],
-                "highlight":   cfg["highlight"],
-                "hidden":      False,
-            }
+                products.append(product)
+                next_id += 1
+        else:
+            for f in imgs:
+                stem      = f.stem
+                dest_name = stem[0].upper() + stem[1:] if stem else stem
+                dest_file = dest_name + f.suffix.lower()
+                dest_path = ASSETS_OUT / dest_file
 
-            ov = overrides.get(dest_name, {})
-            product.update(ov)
+                if not dry_run:
+                    shutil.copy2(f, dest_path)
 
-            if product.get("hidden"):
-                print(f"  [OCULTO] {dest_name}")
-                continue
+                category = cfg["category"]
+                if "baby" in dest_name.lower():
+                    if category == "Menina":
+                        category = "Baby Menina"
+                    elif category == "Menino":
+                        category = "Baby Menino"
 
-            products.append(product)
-            next_id += 1
+                product = {
+                    "id":          next_id,
+                    "name":        dest_name,
+                    "category":    category,
+                    "collection":  cfg["collection"],
+                    "sortGroup":   cfg["sortGroup"],
+                    "sortOrder":   next_id,
+                    "image":       f"/assets/marthie/{dest_file}",
+                    "hoverImage":  None,
+                    "price":       0,
+                    "description": "Peça exclusiva La Villa Bambini.",
+                    "sizes":       [],
+                    "highlight":   cfg["highlight"],
+                    "hidden":      False,
+                }
+
+                ov = overrides.get(dest_name, {})
+                product.update(ov)
+
+                if product.get("hidden"):
+                    print(f"  [OCULTO] {dest_name}")
+                    continue
+
+                products.append(product)
+                next_id += 1
 
     return products
 
 
 def sort_products(products: list) -> list:
-    CATALOG_ORDER = {"Menina": 0, "Menino": 1}
+    CATALOG_ORDER = {
+        "Menina": 0,
+        "Menino": 1,
+        "Baby Menina": 2,
+        "Baby Menino": 3
+    }
 
     def key(p):
         if p.get("collection") == "menina-boneca":
