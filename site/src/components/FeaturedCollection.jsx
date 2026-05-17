@@ -6,16 +6,18 @@ export default function FeaturedCollection({ products, onAdd, onOpenCart }) {
   const [selectedSizes, setSelectedSizes] = useState({});
   const [addingId, setAddingId] = useState(null);
 
+  const [isPaused, setIsPaused] = useState(false);
+
   // Filtrar apenas looks combinando (divulgação)
   const looks = products.filter(p => p.collection === 'menina-boneca' && p.category !== 'Boneca');
 
   useEffect(() => {
-    if (looks.length === 0) return;
+    if (looks.length === 0 || isPaused || selectedSizes[currentIndex]) return;
     const timer = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % looks.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, [looks.length]);
+  }, [looks.length, isPaused, selectedSizes, currentIndex]);
 
   if (looks.length === 0) return null;
 
@@ -60,7 +62,11 @@ export default function FeaturedCollection({ products, onAdd, onOpenCart }) {
 
         {/* Slideshow Editorial de Looks Combinando */}
         {looks.length > 0 && currentSlide && (
-          <div className="featured-slideshow-container slide-up">
+          <div
+            className="featured-slideshow-container slide-up"
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}
+          >
             
             {/* Lado Esquerdo: Foto Grande do Modelo Real */}
             <div className="featured-large-visual">
