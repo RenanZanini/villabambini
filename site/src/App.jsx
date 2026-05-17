@@ -7,6 +7,7 @@ import { ProductGrid } from './components/Product';
 import CartDrawer from './components/CartDrawer';
 import Footer from './components/Footer';
 import products from './data/products';
+import FeaturedCollection from './components/FeaturedCollection';
 import './index.css';
 
 // Número de WhatsApp atualizado
@@ -97,8 +98,13 @@ function App() {
       <Header cartCount={cart.length} onOpenCart={() => setIsCartOpen(true)} />
 
       <main>
-        <Hero products={products} onAdd={handleAddToCart} />
+        <Hero />
         <HowItWorks />
+        <FeaturedCollection
+          products={products}
+          onAdd={handleAddToCart}
+          onOpenCart={() => setIsCartOpen(true)}
+        />
         <ProductGrid
           products={products}
           onAdd={handleAddToCart}

@@ -32,14 +32,14 @@ OVERRIDES  = Path(__file__).parent / "overrides.json"
 # ── Mapeamento pasta → metadados ───────────────────────────────────────────────
 FOLDER_CONFIG = {
     "divulgacao": {
-        "pasta":      MATERIAL / "divulgacao",
+        "pasta":      MATERIAL / "fotos meninas bonecas",
         "category":   "Coleção Menina Boneca",
         "collection": "menina-boneca",
         "sortGroup":  1,
         "highlight":  True,
     },
     "bonecas": {
-        "pasta":      MATERIAL / "bonecas",
+        "pasta":      MATERIAL / "BONECAS-20260516T044646Z-3-001" / "BONECAS",
         "category":   "Boneca",
         "collection": "menina-boneca",
         "sortGroup":  2,
@@ -59,11 +59,21 @@ FOLDER_CONFIG = {
         "sortGroup":  0,
         "highlight":  False,
     },
+    "baby_menina": {
+        "pasta":      MATERIAL / "bebês" / "Bebês Meninas",
+        "category":   "Baby Menina",
+        "collection": None,
+        "sortGroup":  0,
+        "highlight":  False,
+    },
+    "baby_menino": {
+        "pasta":      MATERIAL / "bebês" / "Bebês Meninos",
+        "category":   "Baby Menino",
+        "collection": None,
+        "sortGroup":  0,
+        "highlight":  False,
+    },
 }
-
-# Pasta alternativa para bonecas (nome longo do Google Drive)
-BONECAS_ALT = MATERIAL / "BONECAS-20260516T044646Z-3-001" / "BONECAS"
-LANCO_ALT   = MATERIAL / "Fotos_lançamento"
 
 
 def load_overrides() -> dict:
@@ -90,14 +100,6 @@ def build_products(overrides: dict, dry_run: bool = False) -> list:
 
     for key, cfg in FOLDER_CONFIG.items():
         pasta = cfg["pasta"]
-
-        if key == "divulgacao" and not pasta.exists() and LANCO_ALT.exists():
-            pasta = LANCO_ALT
-            print(f"[INFO] Usando pasta alternativa para divulgacao: {pasta}")
-
-        if key == "bonecas" and not pasta.exists() and BONECAS_ALT.exists():
-            pasta = BONECAS_ALT
-            print(f"[INFO] Usando pasta alternativa para bonecas: {pasta}")
 
         if not pasta.exists():
             print(f"[AVISO] Pasta não encontrada: {pasta}")
@@ -174,17 +176,10 @@ def build_products(overrides: dict, dry_run: bool = False) -> list:
                 if not dry_run:
                     shutil.copy2(f, dest_path)
 
-                category = cfg["category"]
-                if "baby" in dest_name.lower():
-                    if category == "Menina":
-                        category = "Baby Menina"
-                    elif category == "Menino":
-                        category = "Baby Menino"
-
                 product = {
                     "id":          next_id,
                     "name":        dest_name,
-                    "category":    category,
+                    "category":    cfg["category"],
                     "collection":  cfg["collection"],
                     "sortGroup":   cfg["sortGroup"],
                     "sortOrder":   next_id,
