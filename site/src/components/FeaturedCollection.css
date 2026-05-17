@@ -79,6 +79,47 @@
   z-index: 2;
 }
 
+/* Setas de Navegação Manual */
+.featured-arrow-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: var(--color-text-main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 15;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.featured-arrow-btn:hover {
+  background: #ffffff;
+  color: var(--color-accent);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transform: translateY(-50%) scale(1.06);
+}
+
+.featured-arrow-btn:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.featured-arrow-btn.prev {
+  left: 20px;
+}
+
+.featured-arrow-btn.next {
+  right: 20px;
+}
+
 .featured-slide-dots {
   position: absolute;
   bottom: 24px;
@@ -471,6 +512,16 @@
 @media (max-width: 480px) {
   .featured-large-image-wrapper {
     height: 360px;
+  }
+  .featured-arrow-btn {
+    width: 36px;
+    height: 36px;
+  }
+  .featured-arrow-btn.prev {
+    left: 10px;
+  }
+  .featured-arrow-btn.next {
+    right: 10px;
   }
   .featured-product-preview-container {
     flex-direction: column;

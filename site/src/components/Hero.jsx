@@ -9,12 +9,6 @@ export default function Hero() {
     document.getElementById('featured-collection').scrollIntoView({ behavior: 'smooth' });
   };
 
-  const handleVerBaby = (e) => {
-    e.preventDefault();
-    document.getElementById('catalog').scrollIntoView({ behavior: 'smooth' });
-    window.dispatchEvent(new CustomEvent('changeCategory', { detail: 'Baby Menina' }));
-  };
-
   return (
     <section className="hero" id="home">
       <div className="hero-decoration hero-deco-1"></div>
@@ -39,9 +33,6 @@ export default function Hero() {
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
-            </a>
-            <a href="#catalog" onClick={handleVerBaby} className="btn-outline hero-btn-secondary">
-              Conhecer Linha Baby
             </a>
           </div>
         </div>
