@@ -6,9 +6,8 @@ export default function FeaturedCollection({ products, onAdd, onOpenCart }) {
   const [selectedSizes, setSelectedSizes] = useState({});
   const [addingId, setAddingId] = useState(null);
 
-  // Separar looks combinando (divulgação) de bonecas exclusivas
+  // Filtrar apenas looks combinando (divulgação)
   const looks = products.filter(p => p.collection === 'menina-boneca' && p.category !== 'Boneca');
-  const bonecas = products.filter(p => p.collection === 'menina-boneca' && p.category === 'Boneca');
 
   useEffect(() => {
     if (looks.length === 0) return;
@@ -18,7 +17,7 @@ export default function FeaturedCollection({ products, onAdd, onOpenCart }) {
     return () => clearInterval(timer);
   }, [looks.length]);
 
-  if (looks.length === 0 && bonecas.length === 0) return null;
+  if (looks.length === 0) return null;
 
   const currentSlide = looks[currentIndex];
   const selectedSize = selectedSizes[currentIndex] || null;
@@ -42,14 +41,6 @@ export default function FeaturedCollection({ products, onAdd, onOpenCart }) {
     if (!currentSlide || !selectedSize) return;
     setAddingId(currentSlide.id);
     onAdd({ ...currentSlide, selectedSize });
-    setTimeout(() => {
-      setAddingId(null);
-    }, 600);
-  };
-
-  const handleAddBoneca = (boneca) => {
-    setAddingId(boneca.id);
-    onAdd({ ...boneca, selectedSize: 'Tamanho Único' });
     setTimeout(() => {
       setAddingId(null);
     }, 600);
@@ -155,56 +146,6 @@ export default function FeaturedCollection({ products, onAdd, onOpenCart }) {
             </div>
 
           </div>
-        )}
-
-        {/* Separador de Bonecas Exclusivas */}
-        {bonecas.length > 0 && (
-          <>
-            <div className="divider-section">
-              <span className="divider-icon">🪆</span>
-              <h3 className="divider-title">Conheça as Bonecas Exclusivas</h3>
-              <div className="divider-line"></div>
-            </div>
-
-            {/* Grid de Bonecas */}
-            <div className="bonecas-grid">
-              {bonecas.map((product) => {
-                const isAddingBoneca = addingId === product.id;
-
-                return (
-                  <div key={product.id} className="boneca-card">
-                    <div className="boneca-image-wrapper">
-                      <img
-                        src={product.image}
-                        alt={product.name}
-                        className="boneca-image"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div className="boneca-info">
-                      <h4 className="boneca-name">{product.name}</h4>
-                      <p className="boneca-size">Tamanho Único</p>
-                      <div className="boneca-actions">
-                        <button
-                          className="boneca-consult-btn"
-                          onClick={() => handleConsult(product, 'Tamanho Único')}
-                        >
-                          Consultar
-                        </button>
-                        <button
-                          className={`boneca-add-btn ${isAddingBoneca ? 'adding' : ''}`}
-                          onClick={() => handleAddBoneca(product)}
-                          disabled={isAddingBoneca}
-                        >
-                          {isAddingBoneca ? '✓ Na Mala!' : 'Adicionar'}
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </>
         )}
 
         {/* CTA Final */}
