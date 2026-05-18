@@ -2,6 +2,16 @@ import React from 'react';
 import './Header.css';
 
 export default function Header({ cartCount, onOpenCart }) {
+  const handleDepartamentosClick = (e) => {
+    e.preventDefault();
+    const el = document.getElementById('catalog');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+      // Dispara o evento para abrir o painel de filtros no mobile
+      window.dispatchEvent(new CustomEvent('openMobileFilter'));
+    }
+  };
+
   return (
     <header className="header glass-panel" id="header">
       <div className="container header-container">
@@ -14,7 +24,7 @@ export default function Header({ cartCount, onOpenCart }) {
           <a href="#home">Início</a>
           <a href="#how-it-works">Como Funciona</a>
           <a href="#featured-collection">Coleção</a>
-          <a href="#catalog">Departamentos</a>
+          <a href="#catalog" onClick={handleDepartamentosClick}>Departamentos</a>
         </nav>
 
         <button

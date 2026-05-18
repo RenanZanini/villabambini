@@ -140,6 +140,60 @@ function App() {
       <div className={'toast' + (toast.show ? ' show' : '')}>
         <span>{toast.message}</span>
       </div>
+
+      {/* Barra de Navegação Flutuante Móvel (Cápsula de Luxo) */}
+      <nav className="mobile-bottom-nav" aria-label="Navegação móvel inferior">
+        <a href="#home" className="mobile-nav-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          <span>Início</span>
+        </a>
+        <a href="#featured-collection" className="mobile-nav-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span>Coleção</span>
+        </a>
+        <a 
+          href="#catalog" 
+          className="mobile-nav-item"
+          onClick={(e) => {
+            e.preventDefault();
+            const el = document.getElementById('catalog');
+            if (el) el.scrollIntoView({ behavior: 'smooth' });
+            window.dispatchEvent(new CustomEvent('openMobileFilter'));
+          }}
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+            <rect x="3" y="3" width="7" height="7"></rect>
+            <rect x="14" y="3" width="7" height="7"></rect>
+            <rect x="14" y="14" width="7" height="7"></rect>
+            <rect x="3" y="14" width="7" height="7"></rect>
+          </svg>
+          <span>Departamentos</span>
+        </a>
+        <a href="#about" className="mobile-nav-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+          <span>Sobre</span>
+        </a>
+        <button className="mobile-nav-item" onClick={() => setIsCartOpen(true)}>
+          <div className="cart-icon-wrapper">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            {cart.length > 0 && <span className="mobile-cart-badge">{cart.length}</span>}
+          </div>
+          <span>Mala</span>
+        </button>
+      </nav>
     </>
   );
 }

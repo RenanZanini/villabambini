@@ -1,8 +1,7 @@
-.how-it-works {
+﻿.how-it-works {
   padding: 100px 0;
   background-color: var(--color-surface);
   position: relative;
-  scroll-margin-top: 80px;
 }
 
 .section-header {

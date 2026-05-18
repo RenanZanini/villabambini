@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import './FeaturedCollection.css';
 
 export default function FeaturedCollection({ products, onAdd, onOpenCart }) {
@@ -8,32 +8,6 @@ export default function FeaturedCollection({ products, onAdd, onOpenCart }) {
 
   const [isPaused, setIsPaused] = useState(false);
   const [zoomStyle, setZoomStyle] = useState({});
-
-  // Touch Swipe states for mobile
-  const [touchStartX, setTouchStartX] = useState(0);
-  const [touchEndX, setTouchEndX] = useState(0);
-
-  const handleTouchStart = (e) => {
-    setTouchStartX(e.targetTouches[0].clientX);
-  };
-
-  const handleTouchMove = (e) => {
-    setTouchEndX(e.targetTouches[0].clientX);
-  };
-
-  const handleTouchEnd = () => {
-    if (!touchStartX || !touchEndX) return;
-    const diff = touchStartX - touchEndX;
-    if (diff > 50) {
-      // Swipe Left -> Next Look
-      setCurrentIndex((prev) => (prev + 1) % looks.length);
-    } else if (diff < -50) {
-      // Swipe Right -> Previous Look
-      setCurrentIndex((prev) => (prev - 1 + looks.length) % looks.length);
-    }
-    setTouchStartX(0);
-    setTouchEndX(0);
-  };
 
   const handleMouseMove = (e) => {
     const { left, top, width, height } = e.currentTarget.getBoundingClientRect();
@@ -54,7 +28,7 @@ export default function FeaturedCollection({ products, onAdd, onOpenCart }) {
     });
   };
 
-  // Filtrar apenas looks combinando (divulgação)
+  // Filtrar apenas looks combinando (divulga├º├úo)
   const looks = products.filter(p => p.collection === 'menina-boneca' && p.category !== 'Boneca');
 
   useEffect(() => {
@@ -76,7 +50,7 @@ export default function FeaturedCollection({ products, onAdd, onOpenCart }) {
   };
 
   const handleConsult = (product, size) => {
-    let message = `Olá! Gostaria de consultar sobre o look *${product.name}*`;
+    let message = `Ol├í! Gostaria de consultar sobre o look *${product.name}*`;
     if (size) {
       message += ` no tamanho *${size}*`;
     }
@@ -107,12 +81,12 @@ export default function FeaturedCollection({ products, onAdd, onOpenCart }) {
   return (
     <section className="featured-section" id="featured-collection">
       <div className="container">
-        {/* Cabeçalho Editorial */}
+        {/* Cabe├ºalho Editorial */}
         <div className="featured-header">
-          <span className="featured-badge">✦ Lançamento de Inverno</span>
-          <h2 className="featured-title">Coleção Menina & Boneca</h2>
+          <span className="featured-badge">Ô£ª Lan├ºamento de Inverno</span>
+          <h2 className="featured-title">Cole├º├úo Menina & Boneca</h2>
           <p className="featured-subtitle">
-            Meninas e bonecas em looks iguais — momentos únicos para guardar para sempre.
+            Meninas e bonecas em looks iguais ÔÇö momentos ├║nicos para guardar para sempre.
           </p>
         </div>
 
@@ -126,12 +100,7 @@ export default function FeaturedCollection({ products, onAdd, onOpenCart }) {
             
             {/* Lado Esquerdo: Foto Grande do Modelo Real */}
             <div className="featured-large-visual">
-              <div 
-                className="featured-large-image-wrapper"
-                onTouchStart={handleTouchStart}
-                onTouchMove={handleTouchMove}
-                onTouchEnd={handleTouchEnd}
-              >
+              <div className="featured-large-image-wrapper">
                 {looks.map((slide, index) => (
                   <img
                     key={slide.id}
@@ -157,32 +126,37 @@ export default function FeaturedCollection({ products, onAdd, onOpenCart }) {
                 <button
                   className="featured-arrow-btn next"
                   onClick={handleNextSlide}
-                  aria-label="Próximo slide"
+                  aria-label="Pr├│ximo slide"
                 >
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                     <polyline points="9 18 15 12 9 6"></polyline>
                   </svg>
                 </button>
                 
-                {/* Contador de Slides Minimalista de Alto Padrão */}
-                <div className="featured-slide-counter">
-                  <span className="current">{String(currentIndex + 1).padStart(2, '0')}</span>
-                  <span className="separator">/</span>
-                  <span className="total">{String(looks.length).padStart(2, '0')}</span>
+                {/* Dots de navega├º├úo */}
+                <div className="featured-slide-dots">
+                  {looks.map((_, index) => (
+                    <button
+                      key={index}
+                      className={`featured-dot-btn ${index === currentIndex ? 'active' : ''}`}
+                      onClick={() => setCurrentIndex(index)}
+                      aria-label={`Ir para slide ${index + 1}`}
+                    />
+                  ))}
                 </div>
               </div>
             </div>
 
             {/* Lado Direito: Card Editorial do Look Selecionado */}
             <div className="featured-product-box">
-              <span className="featured-box-badge">✦ Look Combinando</span>
+              <span className="featured-box-badge">Ô£ª Look Combinando</span>
               <h3 className="featured-box-title">{currentSlide.name}</h3>
               <p className="featured-box-description">
-                Uma combinação perfeita para criar memórias afetivas únicas. Looks idênticos para a menina e sua boneca Villa Bambini.
+                Uma combina├º├úo perfeita para criar mem├│rias afetivas ├║nicas. Looks id├¬nticos para a menina e sua boneca Villa Bambini.
               </p>
 
               <div className="featured-product-preview-container">
-                {/* Foto Menor de Detalhes da Peça */}
+                {/* Foto Menor de Detalhes da Pe├ºa */}
                 {currentSlide.hoverImage && (
                   <div 
                     className="featured-small-preview"
@@ -216,7 +190,7 @@ export default function FeaturedCollection({ products, onAdd, onOpenCart }) {
                 </div>
               </div>
 
-              {/* CTAs de Ação */}
+              {/* CTAs de A├º├úo */}
               <div className="featured-box-actions">
                 <button
                   className="featured-consult-btn"
@@ -229,7 +203,7 @@ export default function FeaturedCollection({ products, onAdd, onOpenCart }) {
                   onClick={handleAddSlide}
                   disabled={!selectedSize}
                 >
-                  {isAdding ? '✓ Na Mala!' : selectedSize ? 'Adicionar à Mala' : 'Selecione o tamanho'}
+                  {isAdding ? 'Ô£ô Na Mala!' : selectedSize ? 'Adicionar ├á Mala' : 'Selecione o tamanho'}
                 </button>
               </div>
             </div>
@@ -240,7 +214,7 @@ export default function FeaturedCollection({ products, onAdd, onOpenCart }) {
         {/* CTA Final */}
         <div className="featured-cta">
           <button className="cta-button" onClick={onOpenCart}>
-            Ver Minha Mala de Estilo →
+            Ver Minha Mala de Estilo ÔåÆ
           </button>
         </div>
       </div>

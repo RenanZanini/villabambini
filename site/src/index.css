@@ -245,3 +245,113 @@ img {
   width: 28px;
   height: 28px;
 }
+
+/* ===================== */
+/* MOBILE BOTTOM NAV     */
+/* ===================== */
+.mobile-bottom-nav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-bottom-nav {
+    display: flex;
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 32px);
+    max-width: 420px;
+    height: 68px;
+    background: rgba(255, 255, 255, 0.88); /* Vidro fosco chique off-white */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 40px; /* Formato cápsula de luxo */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08), 0 4px 10px rgba(0, 0, 0, 0.03);
+    z-index: 998;
+    padding: 0 16px;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .mobile-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    font-family: var(--font-sans);
+    font-size: 0.68rem;
+    font-weight: 500;
+    padding: 8px;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    min-width: 60px;
+  }
+
+  .mobile-nav-item svg {
+    color: var(--color-text-light);
+    transition: var(--transition-fast);
+  }
+
+  .mobile-nav-item:active {
+    transform: scale(0.92);
+  }
+
+  .mobile-nav-item:hover svg,
+  .mobile-nav-item:active svg {
+    color: var(--color-accent);
+  }
+
+  .mobile-nav-item:hover,
+  .mobile-nav-item:active {
+    color: var(--color-text-main);
+  }
+
+  /* Mala Badge no menu flutuante */
+  .cart-icon-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-cart-badge {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background: var(--color-accent);
+    color: white;
+    font-size: 0.6rem;
+    font-weight: 700;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Reposiciona o WhatsApp FAB e o Toast para não sobrepor a barra flutuante */
+  .whatsapp-fab {
+    bottom: 104px; /* Flutua exatamente acima da barra lateral */
+    right: 20px;
+    width: 52px;
+    height: 52px;
+  }
+  
+  .whatsapp-fab svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .toast {
+    bottom: 104px; /* Flutua acima da barra lateral */
+  }
+}
